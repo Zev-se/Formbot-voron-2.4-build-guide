@@ -1,42 +1,4 @@
-EDIT: This guide was from the beginning written as a combination of a review and a help to others. The kit has been updated since. If there are things that are incorrect now or there are other details you would want to add please do reach out. I'm on both the Voron and Formbot Discord.
-
-I had so many issues with my old small 3D printer I decided it was time to upgrade. I spent more time on fixing issues then printing and it got frustrating really fast so here we are. I bought a Formbot kit in the end of January. It has been sitting in it's box for a bit more then a month but a few weeks ago was finally that week. This post will be a list of issues I found with the build, where the instructions simply were wrong or where I found it to be hard to follow. But to put this into perspective this build has for the most part been a lot of fun and of several hundred pages of documentations there are a few places where things got unclear. The Voron team both surprise me of how well put together this is and inspire me. Vivedino (the company behind the Formbot kit) has put together an amazing kit, I just wish they spent a few hours on the documentation.
-
-## Thanks to
-First things first. Credit where credit is due. This build would not have gone as well as it did if it wasn't for the amazing helt of people on the Voron, Formbot and Mellow 3D Discord (do note most problems I could solve by just searching in the discord channels, please try this first). Here's a list of people I would like to thank:
-
-Formbot Discord:
-- cashmoney
-- Browzzrr V2.6568
-- unkown
-- ĴînRΦђ V2⁶²⁵⁷ | M⁰⁸¹
-- Everest V2.6256 VT V0 ERCF
-- Zv0n
-
-Voron Discord:
-- Troglomike
-- rec
-- ZeroBrain | V0 VT
-- Hagbard V2.1070
-- MemorableC V2.1002
-
-Mellow 3D Discord:
-- jay_s_uk - teamgloomy
-
-I also watched a bunch of youtubers, for inspiration before buying and also to help me understand where things were a tiny bit unclear. As I don't have a complete list I won't include it but Voron-youtube, thanks!
-
-Last but not least course **a huge thanks to the Voron team!**
-
-EDIT, after publishing I've gotten some feedback, typos, things I've missed, better explainations and so on. Here's a list of people who helped out:
-
-Formbot Discord:
-- Beluguita
-
-Voron Discord:
-- Joel V2.4771 V2.6459
-- ganster_uk V2.5588
-
----
+If there are things that are incorrect now or there are other details you would want to add please do reach out or do a pull request. We're on both the Voron and Formbot Discord.
 
 ## For anyone considering this build
 
