@@ -40,13 +40,7 @@ Voron Discord:
 
 ## For anyone considering this build
 
-I used a long list of tools to get this kit together. If you're not a DIY person with a pasion think twice before entering this journey. There's no complete bill of tools needed. Mostly because it varies what you need. For instance I needed drillbits to fix a few holes a fraction to small (see image below). If you self source everything you will need a JST-crimping tool. There is a tools tab on the sourcing guide but it's not complete. What you will need no matter what is a nice set of ball head hex key, trust me, you will use this so much is worth getting.
-![](/images/tolarance_too_small.jpeg)
-
-If (when) I'm to do this again, I will also spend a few bucks on some plastic sorters. Dealing with screws in ziplock-bags got old very quickly. Anything will do but I would probably buy something along the one below. If they have loose compartments use some hotglue to save yourself from dealing with walls getting loose.
-
-![](/images/sortment_box.jpg)
-![](/images/screws_in_bags.jpeg)
+I used a long list of [tools](tools.md) to get this kit together.
 
 Lastly, electricity, especially mains power and AC is dangerous. Please be careful.
 
