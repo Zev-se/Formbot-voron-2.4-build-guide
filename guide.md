@@ -53,32 +53,37 @@ It's a bit hard to know where to jump when, there are at least four different PD
 
 I'll try summerising the jumps here:
 
-| Switch to manual| Page | Stop at page | Comment|
-|---|----|----|---|
-|Voron 2.4R2|1|27||
-|||28| Be sure to remove all protective plastic film from the deck plate, this will be difficult to remove later and might be a firehassard as well as a source to bad smell, I've missed this and will thus have to remove all electronics (again) and two of the motors. The deck plate should be black on one side, this is what you see with white plastic with writing on in all images below (mounted down towards the electronics) |
-||29|-||
-||30|-|turn the DIN-rails 90 degres (if Formbot, we'll get to why later) then continue. This does not apply to the 250, if you do this the PSU won't fit. Will update with images when and if I get them from some kind community member |
-||31|38||
-||39|-|if you build a 300x300 Formbot turn one of the motors 90 degrese so that the cable is on the same side as the two screws of the bracket, this will be Z1 later|
-||40|129||
-|Voron TAP|1|29|The version of tap is slightly different see below.|
-|Voron 2.4R2|131|142||
-|Voron TAP|31|36|||
-|Stealthburner PDF|1|58|note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.|
-|Voron 2.4R2|148|155|Don't mount anything. Also note there's no 5V PSU but instead a extra PCB|
-|||156| Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V|
-|||157||
-||162|167| Skip page 158-161|
-||175|177| Skip page 168-174|
-|Formbot Wiering guide|1|4|mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this blog-post with what is what.|
-|Voron V2.4R2|180|193|this won't be 100% correct as there's no 5V PSU and there's an extra PCB, be carefull here.|
-||194|199|mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forgett the extra LED cable which is separat from the other cable (if your kit is newer then mine it's sold with CAN-bus and this will be totally different as you probably won't have cable chains at all)|
-||200||The B-motor cable is routed in the grove under the gantry with a plastic strip instead of zipties, see image under notes below|
-||201|204||
-|Voron V2.4R2 & Formbot wiering PDF||| Attach cables between breakout board and controll board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
-|[Software Configuration](https://docs.vorondesign.com/build/software/configuration.html)|||Now follow the post build instructions to make sure you've done everything correct|
----
+| Manual               | Pages   | Comment
+|----------------------|---------|---
+| Voron 2.4R2          | 1-27    | Smooth sailing.
+|                      | 28      | Be sure to remove all protective paper or plastic film from both sides of the Deck Panel before mounting.  When mounted, the upper face of the Deck Panel will be visible inside the printer, and the lower face will be hidden inside the electronics bay under the printer.  So select whichever face you want to see all the time to face upwards.
+|                      | 29      | On 250, mount the DIN rails as shown in the Voron 2.4R2 Manual (you may have to shorten them slightly to fit).  On 300 (and 350?) turn the DIN rails 90 degrees and mount them parallel with the Bed Extrusions.
+|                      | 30-38   |
+|                      | 39      | If you build a 300x300 Formbot turn one of the motors 90 degrees so that the cable is on the same side as the two screws of the bracket, this will be Z1 later
+|                      | 40-129  |
+| Voron TAP            | 1-29    |
+| Voron 2.4R2          | 131-142 |
+| Voron TAP            | 31-36   |
+| Stealthburner        | 1-58    | note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.
+| Voron 2.4R2          | 148-155 | Don't mount anything. Also note there's no 5V PSU but instead a extra PCB
+|                      | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
+|                      | 157     |
+|                      | 158-161 | Skip these pages!
+|                      | 162-167 |
+|                      | 168-174 | Skip these pages!
+|                      | 175-177 |
+| Formbot Wiring guide | 1-4     | Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what.
+| Voron V2.4R2         | 180-193 | This won't be 100% correct as there's no 5V PSU and there's an extra PCB, be carefull here.
+|                      | 194-199 | Mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forgett the extra LED cable which is separat from the other cable (if your kit is newer then mine it's sold with CAN-bus and this will be totally different as you probably won't have cable chains at all)
+|                      | 200     | The B-motor cable is routed in the grove under the gantry with a plastic strip instead of zipties, see image under notes below
+|                      | 201-204 |
+
+Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and controll board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
+
+[Software Configuration](https://docs.vorondesign.com/build/software/configuration.html)
+
+Now follow the post build instructions to make sure you've done everything correct
+
 
 ## Notes from the build
 
