@@ -1,4 +1,9 @@
-If there are things that are incorrect now or there are other details you would want to add please do reach out or do a pull request. We're on both the Voron and Formbot Discord.
+## Introduction
+
+Formbot Voron 2.4 kits are generally a good value (high quality, inexpensive) but they include a bunch of Mods, so their build process differs from official Voron.  This divergence is poorly documented.  This document is our attempt to provide a detailed build guide for Formbot Voron 2.4 kits.
+
+Please report any incorrect or missing info here on github or in the Voron or Formbot Discord.
+
 
 ## For anyone considering this build
 
