@@ -5,20 +5,18 @@ Formbot Voron 2.4 kits are generally a good value (high quality, inexpensive) bu
 Please report any incorrect or missing info here on github or in the Voron or Formbot Discord.
 
 
-## For anyone considering this build
+## The build process
 
-I used a long list of [tools](tools.md) to get this kit together.
+A list of tools used to assemble the kit: [tools](tools.md)
 
-Lastly, electricity, especially mains power and AC is dangerous. Please be careful.
-
-## Jumping between different PDF:s
-It's a bit hard to know where to jump when, there are at least four different PDF:s you will need, plus an image of your controller board with all pins listed (this is linked on the Voron guide on page 178). The PDF's are:
+These build instructions will reference the following manuals:
 - [The Voron 2.4R2 Assembly Manual](https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf)
 - [The Stealthburner Assembly Manual](https://github.com/VoronDesign/Voron-Stealthburner/raw/main/Manual/Assembly_Manual_SB.pdf)
 - [The Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf)
-- [The Formbot wiering guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)
+- [The Formbot wiring guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)
+- [Pinout diagram for your controller](https://docs.vorondesign.com/build/electrical/controller_wiring.html#voron-2)
 
-I'll try summerising the jumps here:
+Build sequence:
 
 | Manual               | Pages   | Comment
 |----------------------|---------|---
