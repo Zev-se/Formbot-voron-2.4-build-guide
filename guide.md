@@ -25,7 +25,9 @@ Build sequence:
 |                      | 29      | On 250, mount the DIN rails as shown in the Voron 2.4R2 Manual (you may have to shorten them slightly to fit).  On 300 (and 350?) turn the DIN rails 90 degrees and mount them parallel with the Bed Extrusions.
 |                      | 30-38   |
 |                      | 39      | If you build a 300x300 Formbot turn one of the motors 90 degrees so that the cable is on the same side as the two screws of the bracket, this will be Z1 later
-|                      | 40-129  |
+|                      | 40-57   |
+|                      | 58      | The Formbot kit comes with "Bakelite Isolation Columns", use these instead of M4 nuts as spacers.  ![](/images/bakelite-isolation-columns.png)
+|                      | 59-129  |
 | Voron TAP            | 1-29    |
 | Voron 2.4R2          | 131-142 |
 | Voron TAP            | 31-36   |
