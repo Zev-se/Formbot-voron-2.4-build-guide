@@ -3,10 +3,10 @@
 * Crimping tool for JST connectors needed for some kits and for tinkering. Voron Design recommends Engineer
 PA-09, PA-20, or PA-21.  Others in the community recommend IWISS iCrimp
 SN-28B or Iwiss 2820M.
-* A nice set of metric hex keys, e.g. Wera 950/9 or Wiha 26390.
+* A nice set of metric hex keys, e.g. Wera 950/9 or Wiha 26390.  You need 2 mm, 2.5 mm, 3 mm, and 4 mm.
 * Threadlocker
 * Isopropal alcohol
-* Grease, super lube is a good alternative
+* Grease, super lube is a good alternative, spray white lithium grease is another good option (e.g. <https://www.wd40.com/products/white-lithium-grease/>).
 
 
 # Optional tools
