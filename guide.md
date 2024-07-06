@@ -30,8 +30,10 @@ Build sequence:
 |                      | 55-57   |
 |                      | 58      | The Formbot kit comes with "Bakelite Isolation Columns", use these instead of M4 nuts as spacers.  ![](/images/bakelite-isolation-columns.png)
 |                      | 59-83   |
-|                      | 84      | Do not install the cable chain mount, the Formbot kit uses an umbilical instead of cable chains.
-|                      | 85-129  |
+|                      | 84      | Do not install heat-set threaded inserts into the cable chain mount, the Formbot kit uses an umbilical instead of cable chains.
+|                      | 85-103  |
+|                      | 104     | Do not install the cable chain mount, use M5x10 BHCS to attach both XY Joints to the gantry.
+|                      | 105-129 |
 | Voron TAP            | 1-29    |
 | Voron 2.4R2          | 131-142 |
 | Voron TAP            | 31-36   |
