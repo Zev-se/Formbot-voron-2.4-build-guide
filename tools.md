@@ -4,6 +4,10 @@
 PA-09, PA-20, or PA-21.  Others in the community recommend IWISS iCrimp
 SN-28B or Iwiss 2820M.
 * A nice set of metric hex keys, e.g. Wera 950/9 or Wiha 26390.  You need 2 mm, 2.5 mm, 3 mm, and 4 mm.
+* straight edge or ruler
+* machinist's square or 123 blocks (for squaring the frame)
+* clamps (for squaring the frame)
+* measuring tape (for checking diagonals when squaring the frame)
 * Threadlocker
 * Isopropal alcohol
 * Grease, super lube is a good alternative, spray white lithium grease is another good option (e.g. <https://www.wd40.com/products/white-lithium-grease/>).
