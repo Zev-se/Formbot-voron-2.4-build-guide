@@ -62,7 +62,11 @@ Build sequence:
 |                      | 84      | Do not install heat-set threaded inserts into the cable chain mount, the Formbot kit uses an umbilical instead of cable chains.
 |                      | 85-103  |
 |                      | 104     | Do not install the cable chain mount, use M5x10 BHCS to attach both XY Joints to the gantry.
-|                      | 105-129 |
+|                      | 105-109 |
+|                      | 110     | Use the part for normal microswitch endstops (`z_joint_upper`), not the Hall effect version.
+|                      | 111-113 |
+|                      | 114     | Consider using @andimoto's "Voron v2.4 Gantry Installation Hooks" to help hang the gantry.  <https://www.printables.com/model/173635-voron-v24-gantry-installation-hook-new-version>
+|                      | 115-129 |
 | Voron TAP            | 1-29    |
 | Voron 2.4R2          | 131-142 |
 | Voron TAP            | 31-36   |
