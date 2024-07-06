@@ -31,7 +31,8 @@ Differences from mainline Voron 2.4:
 * Umbillical toolhead wiring instead of cable chains
 
 Noteworthy details:
-* Uses standard microswitch XY endstops, not hall effect.
+* Uses standard microswitch XY endstops, not hall effect
+* TAP uses OptoTap 2.4.1 optical sensor board <https://github.com/VoronDesign/Voron-Tap/tree/main/OptoTap>
 
 
 ## The build process
@@ -42,6 +43,7 @@ These build instructions will reference the following manuals:
 - [The Voron 2.4R2 Assembly Manual](https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf)
 - [The Stealthburner Assembly Manual](https://github.com/VoronDesign/Voron-Stealthburner/raw/main/Manual/Assembly_Manual_SB.pdf)
 - [The Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf)
+- [Voron Tap r8 errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md)
 - [The Formbot wiring guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)
 - [Pinout diagram for your controller](https://docs.vorondesign.com/build/electrical/controller_wiring.html#voron-2)
 
@@ -67,7 +69,10 @@ Build sequence:
 |                      | 111-113 |
 |                      | 114     | Consider using @Nero3D's trick to hang the gantry <https://www.youtube.com/watch?v=YEl5FNvi8Bs&t=10489s>, or using @andimoto's "Voron v2.4 Gantry Installation Hooks" <https://www.printables.com/model/173635-voron-v24-gantry-installation-hook-new-version>
 |                      | 115-129 |
-| Voron TAP            | 1-29    |
+| Voron TAP            | 1-23    |
+| Voron TAP            | 24      | Per the errata (you did read the errata, right) the threaded inserts are installed slightly differently.
+| Voron TAP            | 25-28   |
+| Voron TAP            | 29      | Per the errata we use M3x6, M3x12, and M3x16 SHCS to attach the rail.
 | Voron 2.4R2          | 131-142 |
 | Voron TAP            | 31-36   |
 | Stealthburner        | 1-58    | note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.
