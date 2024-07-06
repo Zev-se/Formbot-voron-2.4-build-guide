@@ -30,6 +30,9 @@ Differences from mainline Voron 2.4:
 * CAN toolhead board
 * Umbillical toolhead wiring instead of cable chains
 
+Noteworthy details:
+* Uses standard microswitch XY endstops, not hall effect.
+
 
 ## The build process
 
