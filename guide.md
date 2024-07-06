@@ -5,6 +5,32 @@ Formbot Voron 2.4 kits are generally a good value (high quality, inexpensive) bu
 Please report any incorrect or missing info here on github or in the Voron or Formbot Discord.
 
 
+## Types of kits
+
+Formbot has sold a couple of different Voron 2.4 kits, and it's a bit unclear how they've changed.  We'll try to collect the info here, please update this document where it is incomplete or incorrect.
+
+
+### "Voron 2.4 R2 Pro+ CoreXY 3D Printer Kit with M8P+CB1 Board and Canbus Wiring System" (ordered 2024-06-23)
+
+Advertised features:
+* TAP leveling sensor
+* Filament runout sensor
+* LED chamber illumination
+* Nevermore air filter
+* EBB SB2209 CAN (RP2020)
+* EBB SB0000 CAN
+* 5" HDMI touch screen
+* Stealthburner + CW2
+* Manta M8P + CB1 motherboard
+* Gates belts
+* 440C linear guide rails
+
+Differences from mainline Voron 2.4:
+* Bakelite spacers under the bed instead of M4 thumb nuts
+* CAN toolhead board
+* Umbillical toolhead wiring instead of cable chains
+
+
 ## The build process
 
 A list of tools used to assemble the kit: [tools](tools.md)
