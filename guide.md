@@ -17,7 +17,7 @@ Advertised features:
 * Filament runout sensor
 * LED chamber illumination
 * Nevermore air filter
-* EBB SB2209 CAN (RP2020)
+* EBB SB2209 CAN (RP2020) (note errata here: <https://github.com/bigtreetech/EBB/issues/88#issuecomment-2120227957>)
 * EBB SB0000 CAN
 * 5" HDMI touch screen
 * Stealthburner + CW2
