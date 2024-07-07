@@ -68,11 +68,13 @@ Build sequence:
 |                      | 110     | Use the part for normal microswitch endstops (`z_joint_upper`), not the Hall effect version.
 |                      | 111-113 |
 |                      | 114     | Consider using @Nero3D's trick to hang the gantry <https://www.youtube.com/watch?v=YEl5FNvi8Bs&t=10489s>, or using @andimoto's "Voron v2.4 Gantry Installation Hooks" <https://www.printables.com/model/173635-voron-v24-gantry-installation-hook-new-version>
-|                      | 115-129 |
+|                      | 115-128 |
+|                      | 129-l30 | Skip these pages, TAP replaces the X carriage.
 | Voron TAP            | 1-23    |
 | Voron TAP            | 24      | Per the errata (you did read the errata, right) the threaded inserts are installed slightly differently.
 | Voron TAP            | 25-28   |
 | Voron TAP            | 29      | Per the errata we use M3x6, M3x12, and M3x16 SHCS to attach the rail.
+| Voron TAP            | 30      | The 2024-06-23 kit uses a "Trident style" X-axis switch.
 | Voron 2.4R2          | 131-142 |
 | Voron TAP            | 31-36   |
 | Stealthburner        | 1-58    | note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.
