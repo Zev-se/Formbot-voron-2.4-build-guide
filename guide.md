@@ -75,7 +75,9 @@ Build sequence:
 |                      | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
 |                      | 157     |
 |                      | 158-161 | Skip these pages!
-|                      | 162-167 |
+|                      | 162     |
+|                      | 163     | The older version of the kit mounts the limit switches in a different way than mainline Voron: ![](/images/voron_limit_switch.png) ![](/images/wrongly_mounted_switch.jpeg)
+|                      | 164-167 |
 |                      | 168-174 | Skip these pages!
 |                      | 175-177 |
 | Formbot Wiring guide | 1-4     | Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what.
@@ -149,10 +151,6 @@ ORANGE - This is Formbots own PCB, in the Voron documentation this is the same a
 
 - Don't forget to change the fuse. It might be hard to know where to find it. Here's an image. 4A for 230V and 8A for 110V. Here's the nice explaination I got "The Bed has 650 Watt + PSU 200 Watt...  850 Watt / 230V = 3,7 Amp".
 ![](/images/fuse.jpeg)
-
-- On page 163 one of the Voron 2.4R2 PDF the limit switches are installed a different way then the once in the kit, this does not make a difference, it's just a bit confusing.
-![](/images/voron_limit_switch.png)
-![](/images/wrongly_mounted_switch.jpeg)
 
 - I found it to be unclear how many of what panel mounts are needed. But the STLs actually says that I noticed later. For instance bottom_panel_clip_x4.stl, the x4 is the amout needed. I printed these in PLA for now. I need the panels to print ABS so it's a bit of a catch 22.
 
