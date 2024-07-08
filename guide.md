@@ -77,7 +77,16 @@ Build sequence:
 | Voron TAP            | 30      | The 2024-06-23 kit uses a "Trident style" X-axis switch.
 | Voron 2.4R2          | 131-142 |
 | Voron TAP            | 31-36   |
-| Stealthburner        | 1-58    | note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.
+| Stealthburner        | 1-12    |
+| Stealthburner        | 13      | The 2024-06-23 kit uses a toolhead PCB (EBB SB2209 RP2040), so install the two threaded inserts for the optional toolhead PCB.
+| Stealthburner        | 14      | For the 2024-06-23 kit: uses umbillical instead of cable chains so skip this page.
+| Stealthburner        | 15-16   |
+| Stealthburner        | 17      | For the 2024-06-23 kit: BMG idler assembly may consist of three parts like the manual shows, or it may consists of just two parts.  As long as the shaft fits tightly and the gear spins freely it's probably ok.  ![](/images/BMG-Idler-Assembly-manual.png) ![](/images/BMG-Idler-Assembly-actual.jpg)
+| Stealthburner        | 18-20   |
+| Stealthburner        | 21      | The Drive Assembly may come as a single piece, with no assembly needed.  ![](/images/single-part-Drive-Assembly.jpg)
+| Stealthburner        | 22-30   |
+| Stealthburner        | 31-32   | For kits with umbillical, skip this part and these pages.
+| Stealthburner        | 33-58   | note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.
 | Voron 2.4R2          | 148-155 | Don't mount anything. Also note there's no 5V PSU but instead a extra PCB
 |                      | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
 |                      | 157     |
