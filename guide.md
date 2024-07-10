@@ -60,7 +60,9 @@ Build sequence:
 |                      | 54      | After carefully installing the flexplate magnet onto the aluminum bed plate, you need to cut away part of the magnet to expose the four bed plate mounting holes.  Note that you do *not* need to cut away the magnet over the two threaded holes near the rear edge of the plate, because these will be accessed from below, not from above.  Locate the bed plate mounting holes by drilling through the magnet from below, using the four existing holes as guides, then cut the magnet using a sharp knife.  ![](/images/flexplate-magnet-holes.jpg)
 |                      | 55-57   |
 |                      | 58      | The Formbot kit comes with "Bakelite Isolation Columns", use these instead of M4 nuts as spacers.  ![](/images/bakelite-isolation-columns.png)
-|                      | 59-83   |
+|                      | 59-63   |
+|                      | 64      | To make mounting the Y endstop easier, use the Formbot version of this part, `a_drive_frame_upper_with_jst_y_endstop.stl`.
+|                      | 65-83   |
 |                      | 84      | Do not install heat-set threaded inserts into the cable chain mount, the Formbot kit uses an umbilical instead of cable chains.
 |                      | 85-103  |
 |                      | 104     | Do not install the cable chain mount, use M5x10 BHCS to attach both XY Joints to the gantry.
