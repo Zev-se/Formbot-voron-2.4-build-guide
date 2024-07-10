@@ -46,6 +46,7 @@ These build instructions will reference the following manuals:
 - [Voron Tap r8 errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md)
 - [The Formbot wiring guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)
 - [Pinout diagram for your controller](https://docs.vorondesign.com/build/electrical/controller_wiring.html#voron-2)
+- [Bigtreetech EBB CAN Stealhburner manual](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/Build%20Guide/EBB%20SB2209%20CAN%20V1.0%EF%BC%88RP2040%EF%BC%89Build%20Guide_20240626.pdf)
 
 Build sequence:
 
@@ -81,7 +82,9 @@ Build sequence:
 | Voron TAP            | 30      | The 2024-06-23 kit uses a "Trident style" X-axis switch.
 | Voron 2.4R2          | 131-142 |
 | Voron TAP            | 31-36   |
-| Stealthburner        | 1-12    |
+| Stealthburner        | 1-10    |
+| Stealthburner        | 11      | If you have a CAN kit using EBB SB2209/SB0000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Main_Body_EBB.stl>
+| Stealthburner        | 12      |
 | Stealthburner        | 13      | The 2024-06-23 kit uses a toolhead PCB (EBB SB2209 RP2040), so install the two threaded inserts for the optional toolhead PCB.
 | Stealthburner        | 14      | For the 2024-06-23 kit: uses umbillical instead of cable chains so skip this page.
 | Stealthburner        | 15-16   |
@@ -90,7 +93,9 @@ Build sequence:
 | Stealthburner        | 21      | The Drive Assembly may come as a single piece, with no assembly needed.  ![](/images/single-part-Drive-Assembly.jpg)
 | Stealthburner        | 22-30   |
 | Stealthburner        | 31-32   | For kits with umbillical, skip this part and these pages.
-| Stealthburner        | 33-58   | note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.
+| Stealthburner        | 33      |
+| Stealthburner        | 34      | If you have a CAN kit using EBB SB2209/SB000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Cable_Cover_For_PCB_V1.1.STL>
+| Stealthburner        | 35-58   | note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.
 | Voron 2.4R2          | 148-155 | Don't mount anything. Also note there's no 5V PSU but instead a extra PCB
 |                      | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
 |                      | 157     |
