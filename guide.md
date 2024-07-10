@@ -61,7 +61,7 @@ Build sequence:
 |                      | 55-57   |
 |                      | 58      | The Formbot kit comes with "Bakelite Isolation Columns", use these instead of M4 nuts as spacers.  ![](/images/bakelite-isolation-columns.png)
 |                      | 59-63   |
-|                      | 64      | To make mounting the Y endstop easier, use the Formbot version of this part, `a_drive_frame_upper_with_jst_y_endstop.stl`.
+|                      | 64      | To make mounting the Y endstop easier, use the Formbot version of this part: <https://github.com/FORMBOT/Voron-2.4/blob/main/STL/Primary/a_drive_frame_upper_with_jst_y_endstop.stl>
 |                      | 65-83   |
 |                      | 84      | Do not install heat-set threaded inserts into the cable chain mount, the Formbot kit uses an umbilical instead of cable chains.
 |                      | 85-103  |
