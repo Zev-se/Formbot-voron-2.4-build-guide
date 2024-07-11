@@ -62,7 +62,7 @@ Build sequence:
 |                      | 55-57   |
 |                      | 58      | The Formbot kit comes with "Bakelite Isolation Columns", use these instead of M4 nuts as spacers.  ![](/images/bakelite-isolation-columns.png)
 |                      | 59-63   |
-|                      | 64      | To make mounting the Y endstop easier, use the Formbot version of this part: <https://github.com/FORMBOT/Voron-2.4/blob/main/STL/Primary/a_drive_frame_upper_with_jst_y_endstop.stl>
+|                      | 64      | I'm using the default Voron Design `a_drive_frame_upper` part, not Formbot's version.  I'm then using @decidophobia's "Voron V2.4 PG7 Umbilical & Y Endstop Relocation with cable cutout - REMIX" part from printables to mount the Y endstop and anchor the PG7 gland.  <https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with->
 |                      | 65-83   |
 |                      | 84      | Do not install heat-set threaded inserts into the cable chain mount, the Formbot kit uses an umbilical instead of cable chains.
 |                      | 85-103  |
@@ -74,14 +74,17 @@ Build sequence:
 |                      | 115-125 |
 |                      | 126-127 | Route the A and B belts at this point and leave them loose in front of the X rail.
 |                      | 128     |
-|                      | 129-l30 | Skip these pages, TAP replaces the X carriage.
+|                      | 129-l31 | Skip these pages, TAP replaces the X carriage.
 | Voron TAP            | 1-23    |
 | Voron TAP            | 24      | Per the errata (you did read the errata, right) the threaded inserts are installed slightly differently.
 | Voron TAP            | 25-28   |
 | Voron TAP            | 29      | Per the errata we use M3x6, M3x12, and M3x16 SHCS to attach the rail.
-| Voron TAP            | 30      | The 2024-06-23 kit uses a "Trident style" X-axis switch.
-| Voron 2.4R2          | 131-142 |
-| Voron TAP            | 31-36   |
+| Voron TAP            | 30      | The 2024-06-23 kit uses a "Trident style" X-axis microswitch.
+| Voron TAP            | 31      | Attach the belts to the Center and attach the Center to the MGN12 linear rail of the X axis.  This video is helpful: <https://www.youtube.com/watch?v=mJNCn72lQpU>
+| Voron 2.4R2          | 132-138 | Route the belts.
+| Voron 2.4R2          | 139-141 | Skip these, use the Tap instead.
+| Voron 2.4R2          | 142     | Check your work.
+| Voron TAP            | 32-33   |
 | Stealthburner        | 1-10    |
 | Stealthburner        | 11      | If you have a CAN kit using EBB SB2209/SB0000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Main_Body_EBB.stl>
 | Stealthburner        | 12      |
@@ -96,6 +99,7 @@ Build sequence:
 | Stealthburner        | 33      |
 | Stealthburner        | 34      | If you have a CAN kit using EBB SB2209/SB000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Cable_Cover_For_PCB_V1.1.STL>
 | Stealthburner        | 35-58   | note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.
+| Voron TAP            | 34-36   |
 | Voron 2.4R2          | 148-155 | Don't mount anything. Also note there's no 5V PSU but instead a extra PCB
 |                      | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
 |                      | 157     |
