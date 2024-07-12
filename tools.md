@@ -3,7 +3,7 @@
 * Crimping tool for JST connectors needed for some kits and for tinkering. Voron Design recommends Engineer
 PA-09, PA-20, or PA-21.  Others in the community recommend IWISS iCrimp
 SN-28B or Iwiss 2820M.
-* A nice set of metric hex keys, e.g. Wera 950/9 or Wiha 26390.  You need 2 mm, 2.5 mm, 3 mm, and 4 mm.
+* A nice set of metric hex keys, e.g. Wera 950/9 or Wiha 26390.  You need 1.5 mm, 2 mm, 2.5 mm, 3 mm, and 4 mm.
 * Phillips screwdriver, P0 size
 * Flush cutters
 * straight edge or ruler
