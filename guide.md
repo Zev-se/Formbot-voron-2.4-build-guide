@@ -84,7 +84,7 @@ Build sequence:
 | Voron 2.4R2          | 132-138 | Route the belts.
 | Voron 2.4R2          | 139-141 | Skip these, use the Tap instead.
 | Voron 2.4R2          | 142     | Check your work.
-| Voron TAP            | 32-33   |
+| Voron TAP            | 32-34   |
 | Stealthburner        | 1-10    |
 | Stealthburner        | 11      | If you have a CAN kit using EBB SB2209/SB0000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Main_Body_EBB.stl>
 | Stealthburner        | 12      |
@@ -111,7 +111,7 @@ Build sequence:
 | EBB SB2209           | 11      |
 | Stealthburner        | 57-58   |
 | Stealthburner        | 59-63   | Skip, not used with Tap.
-| Voron TAP            | 34-36   |
+| Voron TAP            | 35-36   |
 | Voron 2.4R2          | 148-155 | Don't mount anything. Also note there's no 5V PSU but instead a extra PCB
 |                      | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
 |                      | 157     |
