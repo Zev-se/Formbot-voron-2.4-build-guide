@@ -46,7 +46,7 @@ These build instructions will reference the following manuals:
 - [Voron Tap r8 errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md)
 - [The Formbot wiring guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)
 - [Pinout diagram for your controller](https://docs.vorondesign.com/build/electrical/controller_wiring.html#voron-2)
-- [Bigtreetech EBB CAN Stealhburner manual](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/Build%20Guide/EBB%20SB2209%20CAN%20V1.0%EF%BC%88RP2040%EF%BC%89Build%20Guide_20240626.pdf)
+- [Bigtreetech EBB SB2209 CAN (RP2040) manual](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/Build%20Guide/EBB%20SB2209%20CAN%20V1.0%EF%BC%88RP2040%EF%BC%89Build%20Guide_20240626.pdf)
 
 Build sequence:
 
@@ -98,8 +98,19 @@ Build sequence:
 | Stealthburner        | 31-32   | For kits with umbillical, skip this part and these pages.
 | Stealthburner        | 33      |
 | Stealthburner        | 34      | If you have a CAN kit using EBB SB2209/SB000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Cable_Cover_For_PCB_V1.1.STL>
-| Stealthburner        | 35-51   |
-| Stealthburner        | 52-58   | note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.
+| Stealthburner        | 35-42   |
+| Stealthburner        | 43      | Some kits will come with multiple PTFE tubes, use the shorter one with ~4 mm OD and ~2 mm ID.
+| Stealthburner        | 44-54   |
+| Stealthburner        | 55      | Discard the half of the fan housing that doesn't have the fan motor and rotor mounted on it.
+| Stealthburner        | 56      | Don't screw in the screws yet, they'll come as part of the SB2209.
+| EBB SB2209           | 2       | Install the SB0000 on top of the fan, then screw in the screws.
+| EBB SB2209           | 3-4     | Set the SB2209 jumper for the voltage shown on your fans, mine were all 24V.
+| EBB SB2209           | 5       | Skip this page if your fans have 2-wire connections (non-PWM fans).
+| EBB SB2209           | 6-9     |
+| EBB SB2209           | 10      | Install the jumper for the 120R terminating resistor.
+| EBB SB2209           | 11      |
+| Stealthburner        | 57-58   |
+| Stealthburner        | 59-63   | Skip, not used with Tap.
 | Voron TAP            | 34-36   |
 | Voron 2.4R2          | 148-155 | Don't mount anything. Also note there's no 5V PSU but instead a extra PCB
 |                      | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
