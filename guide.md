@@ -34,6 +34,7 @@ Noteworthy details:
 * Uses standard microswitch XY endstops, not hall effect
 * TAP uses OptoTap 2.4.1 optical sensor board <https://github.com/VoronDesign/Voron-Tap/tree/main/OptoTap>
 * Comes with two PT1000 thermal sensors
+* The "SB2209 CAN (RP2040)" includes ADXL345 accelerometer for input shaping
 
 
 ## The build process
@@ -85,7 +86,9 @@ Build sequence:
 | Voron 2.4R2          | 132-138 | Route the belts.
 | Voron 2.4R2          | 139-141 | Skip these, use the Tap instead.
 | Voron 2.4R2          | 142     | Check your work.
-| Voron TAP            | 32-34   |
+| Voron TAP            | 32      |
+| Voron TAP            | 33      | I had to avoid tucking the belts through the slots in the Front part, it interfered with the motion of the Tap.
+| Voron TAP            | 34      |
 | Stealthburner        | 1-10    |
 | Stealthburner        | 11      | If you have a CAN kit using EBB SB2209/SB0000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Main_Body_EBB.stl>
 | Stealthburner        | 12      |
@@ -113,6 +116,8 @@ Build sequence:
 | Stealthburner        | 57-58   |
 | Stealthburner        | 59-65   | Skip, not used with Tap.
 | Stealthburner        | 66      | The Printhead assembly mates flush against the Tap assembly, and is initially held by the two M3x16 SHCS screws from Tap page 25 and resting on the two M3x6 BHCS from Tap page 27.
+| Stealthburner        | 67      | Don't do this page, we did it as part of the EBB manual.
+| Stealthburner        | 68-69   | Don't do these pages, there's an ADXL345 on the SB2209 (RP2040).
 | Voron TAP            | 35      | Verify Printhead alignment.  If needed, modify rear of printhead with a file or dremel.  Tighten the two upper screws to hold the printhead in place.
 | EBB SB2209           | 12-14   |
 | EBB SB2209           | 15      | Skip this page, the kit does not use a Prox Z endstop/probe.
@@ -120,9 +125,12 @@ Build sequence:
 | EBB SB2209           | 17      | The kit comes with a pre-crimped probe cable to use for Tap and the Filament Runout Sensor.
 | EBB SB2209           | 18      | Skip this page, the kit does not use BLTouch or Klicky probe.
 | EBB SB2209           | 19      | Final assembly of Stealthburner!
-| EBB SB2209           | 20-21   |
-| Stealthburner        | 67      | Don't do this page, we did it as part of the EBB manual
+| EBB SB2209           | 20-24   |
+| EBB SB2209           | 25-29   | Flash the EBB SB2240.  I had to unplug USB, press and hold BOOT, and reconnect USB in order to get it into bootloader mode, clicking the RST button did not work.
 | Voron TAP            | 36      |
+| Voron 2.4R2          | 143-144 | Skip these pages, the kit doesn't use a Z probe (uses Tap instead).
+| Voron 2.4R2          | 145     | Skip this pages, the kit doesn't use a hall-effect X endstop.
+| Voron 2.4R2          | 146-148 |
 | Voron 2.4R2          | 148-155 | Don't mount anything. Also note there's no 5V PSU but instead a extra PCB
 |                      | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
 |                      | 157     |
