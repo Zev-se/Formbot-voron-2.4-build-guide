@@ -49,6 +49,7 @@ These build instructions will reference the following manuals:
 - [The Formbot wiring guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)
 - [Pinout diagram for your controller](https://docs.vorondesign.com/build/electrical/controller_wiring.html#voron-2)
 - [Bigtreetech EBB SB2209 CAN (RP2040) manual](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/Build%20Guide/EBB%20SB2209%20CAN%20V1.0%EF%BC%88RP2040%EF%BC%89Build%20Guide_20240626.pdf)
+- [Bigtreetech MANTA M8P V1.0&V1.1 User Manual](https://github.com/bigtreetech/Manta-M8P/blob/master/V1.0_V1.1/BIGTREETECH%20MANTA%20M8P%20V1.0%26V1.1%20User%20Manual.pdf)
 
 Build sequence:
 
@@ -130,9 +131,11 @@ Build sequence:
 | Voron TAP            | 36      |
 | Voron 2.4R2          | 143-144 | Skip these pages, the kit doesn't use a Z probe (uses Tap instead).
 | Voron 2.4R2          | 145     | Skip this pages, the kit doesn't use a hall-effect X endstop.
-| Voron 2.4R2          | 146-148 |
-| Voron 2.4R2          | 148-155 | Don't mount anything. Also note there's no 5V PSU but instead a extra PCB
-|                      | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
+| Voron 2.4R2          | 146-149 |
+| Voron 2.4R2          | 150-152 | Skip these pages, the kit does not use a Raspberry Pi or a 5V power supply.
+| Voron 2.4R2          | 153     | Mount the 24V power supply.  For 300mm, mount as shown in the Formbot Wiring Guide.  For 250mm, mount as shown in the Voron 2.4r2 manual.
+| Voron 2.4R2          | 154-155 | Mount the Manta M8P with the parts from the bigtreetech/Manta-M8P repo, using 4x M3-6 BHCS.
+| Voron 2.4R2          | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
 |                      | 157     |
 |                      | 158-161 | Skip these pages!
 |                      | 162     |
