@@ -133,16 +133,20 @@ Build sequence:
 | Voron 2.4R2          | 145     | Skip this pages, the kit doesn't use a hall-effect X endstop.
 | Voron 2.4R2          | 146-149 |
 | Voron 2.4R2          | 150-152 | Skip these pages, the kit does not use a Raspberry Pi or a 5V power supply.
-| Voron 2.4R2          | 153     | Mount the 24V power supply.  For 300mm, mount as shown in the Formbot Wiring Guide.  For 250mm, mount as shown in the Voron 2.4r2 manual.
-| Voron 2.4R2          | 154-155 | Mount the Manta M8P with the parts from the bigtreetech/Manta-M8P repo, using 4x M3-6 BHCS.
+| Voron 2.4R2          | 153     | Put the mounts on the 24V power supply.
+| Voron 2.4R2          | 154-155 | Put the mounts on the Manta M8P using the parts from the bigtreetech/Manta-M8P repo, using 4x M3-6 BHCS.
 | Voron 2.4R2          | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
-|                      | 157     |
-|                      | 158-161 | Skip these pages!
-|                      | 162     |
-|                      | 163     | The older version of the kit mounts the limit switches in a different way than mainline Voron: ![](/images/voron_limit_switch.png) ![](/images/wrongly_mounted_switch.jpeg)
-|                      | 164-167 |
-|                      | 168-174 | Skip these pages!
-|                      | 175-177 |
+| Voron 2.4R2          | 157     |
+| Voron 2.4R2          | 158-161 | Skip these pages, the kit uses Tap instead of a Z endstop.
+| Voron 2.4R2          | 162-164 | Different versions of this kit handle X & Y endstops (limit switches) in different ways. Newer versions of the kit use SB2209 to put the X endstop on the toolhead and the Y endstop on the right-rear coreXY motor: <https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with->. The older version of the kit mounts the limit switches in a different way than mainline Voron: ![](/images/voron_limit_switch.png) ![](/images/wrongly_mounted_switch.jpeg)
+| Voron 2.4R2          | 165-167 |
+| Voron 2.4R2          | 168     | Note: For the rest of the assembly process, refer to the Voron 2.4r2 manual and the Formbot wiring guide for placement of the electronics.
+| Voron 2.4R2          | 169     | Install the 24V power supply and its mounts on the DIN rail.  For 300mm, mount as shown in the Formbot Wiring Guide.  For 250mm, mount as shown in the Voron 2.4r2 manual. Make sure you add the extra mounting bracket.
+| Voron 2.4R2          | 170     | Install the Manta 8P controller and its mounts on the DIN rail.
+| Voron 2.4R2          | 171     |
+| Voron 2.4R2          | 172     | Skip this page, no 5V supply with this kit.
+| Voron 2.4R2          | 173     |
+|                      | 174-177 |
 | Formbot Wiring guide | 1-4     | Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what.
 | Voron V2.4R2         | 180-193 | This won't be 100% correct as there's no 5V PSU and there's an extra PCB, be carefull here.
 |                      | 194-199 | Mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forgett the extra LED cable which is separat from the other cable (if your kit is newer then mine it's sold with CAN-bus and this will be totally different as you probably won't have cable chains at all)
