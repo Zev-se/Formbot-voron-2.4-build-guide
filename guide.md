@@ -155,7 +155,9 @@ Build sequence:
 | Voron 2.4R2          | 192-193 | Skip these pages, the kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
 | Voron 2.4R2          | 194-199 | Older non-CAN, non-umbilical kit: mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forget the extra LED cable.  Newer kit with CAN & umbilical: skip these pages, the umbilical replaces the X and Y cable chains.
 | Voron 2.4R2          | 200     | The B-motor cable is routed in the 2020 grove under the gantry and held in place with a plastic cover instead of zipties.  Trim the plastic cover to length.  ![](/images/A_B_motor_cable.jpeg)
-|                      | 201-204 |
+|                      | 201-202 | Mount the two ends without the chain attached.  Adjust the number of links in the Z cable chain to get it to the correct length.  Open the gates/covers in the chain links before mounting.
+|                      | 203     |
+|                      | 204     | Skip this page if you have a newer kit with CAN/umbilical, it has no cables routed along the gantry.
 
 Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and controll board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
 
