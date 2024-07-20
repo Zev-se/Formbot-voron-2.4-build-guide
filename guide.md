@@ -147,15 +147,14 @@ Build sequence:
 | Voron 2.4R2          | 172     | Skip this page, no 5V supply with this kit.
 | Voron 2.4R2          | 173     |
 | Voron 2.4R2          | 174-179 | Skip these pages, the Formbot kit uses a Manta M8P control board instead.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
+| Formbot Wiring guide | 1-4     | For older (non-CAN) kits: Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what.
 | Voron 2.4R2          | 180-183 | Wire up the 24V PSU.  Test it before connecting 24V to anything.
 | Voron 2.4R2          | 184-185 |
 | Voron 2.4R2          | 186-189 | Skip these pages, the kit does not include Wago clamps.
 | Voron 2.4R2          | 190-191 | Skip these pages, the kit does not include a 5V PSU or a Raspberry Pi.
 | Voron 2.4R2          | 192-193 | Skip these pages, the kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
-| Formbot Wiring guide | 1-4     | Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what.
-| Voron V2.4R2         | 180-193 | This won't be 100% correct as there's no 5V PSU and there's an extra PCB, be carefull here.
-|                      | 194-199 | Mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forgett the extra LED cable which is separat from the other cable (if your kit is newer then mine it's sold with CAN-bus and this will be totally different as you probably won't have cable chains at all)
-|                      | 200     | The B-motor cable is routed in the grove under the gantry with a plastic strip instead of zipties, see image under notes below
+| Voron 2.4R2          | 194-199 | Older non-CAN, non-umbilical kit: mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forget the extra LED cable.  Newer kit with CAN & umbilical: skip these pages, the umbilical replaces the X and Y cable chains.
+| Voron 2.4R2          | 200     | The B-motor cable is routed in the grove under the gantry with a plastic strip instead of zipties, see image under notes below
 |                      | 201-204 |
 
 Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and controll board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
