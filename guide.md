@@ -28,7 +28,7 @@ Advertised features:
 Differences from mainline Voron 2.4:
 * Bakelite spacers under the bed instead of M4 thumb nuts
 * CAN toolhead board
-* Umbillical toolhead wiring instead of cable chains
+* Umbilical toolhead wiring instead of cable chains
 
 Noteworthy details:
 * Uses standard microswitch XY endstops, not hall effect
@@ -94,13 +94,13 @@ Build sequence:
 | Stealthburner        | 11      | If you have a CAN kit using EBB SB2209/SB0000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Main_Body_EBB.stl>
 | Stealthburner        | 12      |
 | Stealthburner        | 13      | The 2024-06-23 kit uses a toolhead PCB (EBB SB2209 RP2040), so install the two threaded inserts for the optional toolhead PCB.
-| Stealthburner        | 14      | For the 2024-06-23 kit: uses umbillical instead of cable chains so skip this page.
+| Stealthburner        | 14      | For the 2024-06-23 kit: uses umbilical instead of cable chains so skip this page.
 | Stealthburner        | 15-16   |
 | Stealthburner        | 17      | For the 2024-06-23 kit: BMG idler assembly may consist of three parts like the manual shows, or it may consists of just two parts.  As long as the shaft fits tightly and the gear spins freely it's probably ok.  ![](/images/BMG-Idler-Assembly-manual.png) ![](/images/BMG-Idler-Assembly-actual.jpg)
 | Stealthburner        | 18-20   |
 | Stealthburner        | 21      | The Drive Assembly may come as a single piece, with no assembly needed.  ![](/images/single-part-Drive-Assembly.jpg)
 | Stealthburner        | 22-30   |
-| Stealthburner        | 31-32   | For kits with umbillical, skip this part and these pages.  Later we'll attach the BTT "Cable Bridge" that replaces the stock Voron "Chain Anchor".
+| Stealthburner        | 31-32   | For kits with umbilical, skip this part and these pages.  Later we'll attach the BTT "Cable Bridge" that replaces the stock Voron "Chain Anchor".
 | Stealthburner        | 33      |
 | Stealthburner        | 34      | If you have a CAN kit using EBB SB2209/SB000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Cable_Cover_For_PCB_V1.1.STL>
 | Stealthburner        | 35-42   |
