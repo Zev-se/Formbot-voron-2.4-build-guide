@@ -50,6 +50,7 @@ These build instructions will reference the following manuals:
 - [Pinout diagram for your controller](https://docs.vorondesign.com/build/electrical/controller_wiring.html#voron-2)
 - [Bigtreetech EBB SB2209 CAN (RP2040) manual](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/Build%20Guide/EBB%20SB2209%20CAN%20V1.0%EF%BC%88RP2040%EF%BC%89Build%20Guide_20240626.pdf)
 - [Bigtreetech MANTA M8P V1.0&V1.1 User Manual](https://github.com/bigtreetech/Manta-M8P/blob/master/V1.0_V1.1/BIGTREETECH%20MANTA%20M8P%20V1.0%26V1.1%20User%20Manual.pdf)
+- [Esoterical CAN Bus Guide](https://canbus.esoterical.online/)
 
 Build sequence:
 
@@ -152,12 +153,14 @@ Build sequence:
 | Voron 2.4R2          | 184-185 |
 | Voron 2.4R2          | 186-189 | Skip these pages, the kit does not include Wago clamps.
 | Voron 2.4R2          | 190-191 | Skip these pages, the kit does not include a 5V PSU or a Raspberry Pi.
-| Voron 2.4R2          | 192-193 | Skip these pages, the kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
+| Voron 2.4R2          | 192     | This kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
+| Voron 2.4R2          | 193     | Run the Z motor wires, but note that this kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
 | Voron 2.4R2          | 194-199 | Older non-CAN, non-umbilical kit: mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forget the extra LED cable.  Newer kit with CAN & umbilical: skip these pages, the umbilical replaces the X and Y cable chains.
 | Voron 2.4R2          | 200     | The B-motor cable is routed in the 2020 grove under the gantry and held in place with a plastic cover instead of zipties.  Trim the plastic cover to length.  ![](/images/A_B_motor_cable.jpeg)
-|                      | 201-202 | Mount the two ends without the chain attached.  Adjust the number of links in the Z cable chain to get it to the correct length.  Open the gates/covers in the chain links before mounting.
-|                      | 203     |
-|                      | 204     | Skip this page if you have a newer kit with CAN/umbilical, it has no cables routed along the gantry.
+| Voron 2.4R2          | 201-202 | Mount the two ends without the chain attached.  Adjust the number of links in the Z cable chain to get it to the correct length.  Open the gates/covers in the chain links before mounting.
+| Voron 2.4R2          | 203     |
+| Voron 2.4R2          | 204     | Skip this page if you have a newer kit with CAN/umbilical, it has no cables routed along the gantry.
+| Voron 2.4R2          | 205-209 | Skip these pages, follow the M8P instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
 
 Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and controll board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
 
