@@ -34,6 +34,7 @@ Noteworthy details:
 * Uses standard microswitch XY endstops, not hall effect
 * TAP uses OptoTap 2.4.1 optical sensor board <https://github.com/VoronDesign/Voron-Tap/tree/main/OptoTap>
 * Comes with two PT1000 thermal sensors
+* The heated bed has an NTC 100K B3950 thermistor.
 * The "SB2209 CAN (RP2040)" includes ADXL345 accelerometer for input shaping
 
 
