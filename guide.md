@@ -161,9 +161,16 @@ Build sequence:
 | Voron 2.4R2          | 201-202 | Mount the two ends without the chain attached.  Adjust the number of links in the Z cable chain to get it to the correct length.  Open the gates/covers in the chain links before mounting.
 | Voron 2.4R2          | 203     |
 | Voron 2.4R2          | 204     | Skip this page if you have a newer kit with CAN/umbilical, it has no cables routed along the gantry.
-| Voron 2.4R2          | 205-209 | Skip these pages, follow the M8P instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
+| Voron 2.4R2          | 205-209 | Skip these pages, follow the M8P instructions on the Voron Designs website instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>.  Do the Electrical Wiring, Software Installation, Software Configuration, Initial Setup, Slicer Setup, and First Print sections.  First print wooo!
+| Voron 2.4R2          | 210     |
+| Voron 2.4R2          | 211     | Skip this page, the Formbot kit uses a different display with different mounting parts.
+| Voron 2.4R2          | 212-213 |
+| Voron 2.4R2          | 214-216 | Skip this page, the Formbot kit uses a different display with different mounting parts.
+| Voron 2.4R2          | 217-219 |
+| Voron 2.4R2          | 220-221 | Skip these pages, mount & hook up the 5" HDMI screen instead.
+| Voron 2.4R2          | 222-225 |
 
-Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and controll board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
+Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and control board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
 
 [Software Configuration](https://docs.vorondesign.com/build/software/configuration.html)
 
