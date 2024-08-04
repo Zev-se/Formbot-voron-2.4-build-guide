@@ -171,7 +171,9 @@ Build sequence:
 | Voron 2.4R2          | 222-230 |
 | Voron 2.4R2          | 231     | Note the wiring of the fans will depend on your controller board, on my Manta M8P I used `FAN0` and `FAN1` at 24V, see <https://github.com/bigtreetech/Manta-M8P/blob/master/V1.0_V1.1/Hardware/BIGTREETECH%20MANTA%20M8P%20V1.1%20PinOut.png>
 | Voron 2.4R2          | 232     | Use the red VFB tape, not the yellow foam tape.
-| Voron 2.4R2          | 233     |
+| Voron 2.4R2          | 233-234 |
+| Voron 2.4R2          | 235-236 | I found it easier to start with the screws and hammer head T-nuts off the Z belt covers.  I slid the Z belt cover into place, inserted the hammer head T-nut into the extrusion slot, slid it under the hole in the Z belt cover, and screwed in the screw.
+| Voron 2.4R2          | 237-244 | Hammer head T-nuts are not my favorite, super fiddly.
 
 Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and control board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
 
