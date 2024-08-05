@@ -24,6 +24,7 @@ Advertised features:
 * Manta M8P + CB1 motherboard
 * Gates belts
 * 440C linear guide rails
+* Double-sided magnetic flexible PEI print sheet (textured on one side, smooth on the other)
 
 Differences from mainline Voron 2.4:
 * Bakelite spacers under the bed instead of M4 thumb nuts
@@ -110,6 +111,7 @@ Build sequence:
 | Stealthburner        | 44-54   |
 | Stealthburner        | 55      | Discard the half of the fan housing that doesn't have the fan motor and rotor mounted on it.
 | Stealthburner        | 56      | Don't screw in the screws yet, they'll come as part of the SB2209.
+| EBB SB2209           | N/A     | To work around [this problem](https://github.com/bigtreetech/EBB/issues/88), solder a 10 kOhm resistor between GPIO21 and +5V on the Probe connector. ![](/images/SB2209-RP2040-pullup.jpg)
 | EBB SB2209           | 2       | Install the SB0000 on top of the fan, then screw in the screws.
 | EBB SB2209           | 3-4     | Set the SB2209 jumper for the voltage shown on your fans, mine were all 24V.
 | EBB SB2209           | 5       | Skip this page if your fans have 2-wire connections (non-PWM fans).
@@ -174,6 +176,11 @@ Build sequence:
 | Voron 2.4R2          | 233-234 |
 | Voron 2.4R2          | 235-236 | I found it easier to start with the screws and hammer head T-nuts off the Z belt covers.  I slid the Z belt cover into place, inserted the hammer head T-nut into the extrusion slot, slid it under the hole in the Z belt cover, and screwed in the screw.
 | Voron 2.4R2          | 237-244 | Hammer head T-nuts are not my favorite, super fiddly.
+| Voron 2.4R2          | 245-247 |
+| Voron 2.4R2          | 248-249 | Attach the hinges to the doors but don't attach the handles.  Test fit the doors and sand the edges to fit, then attach the handles.
+| Voron 2.4R2          | 250-251 |
+| Voron 2.4R2          | 252     | The Formbot kit supplies the filter access cover, but feel free to ignore that part and print your own if you want it in the accent color.
+| Voron 2.4R2          | 253-259 |
 
 Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and control board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
 
