@@ -76,7 +76,7 @@ Build sequence:
 |                      | 105-109 |
 |                      | 110     | Use the part for normal microswitch endstops (`z_joint_upper`), not the Hall effect version.
 |                      | 111-113 |
-|                      | 114     | Consider using @Nero3D's trick to hang the gantry <https://www.youtube.com/watch?v=YEl5FNvi8Bs&t=10489s>, or using @andimoto's "Voron v2.4 Gantry Installation Hooks" <https://www.printables.com/model/173635-voron-v24-gantry-installation-hook-new-version>
+|                      | 114     | There are a couple of options to make hanging the gantry easier: [@Nero3D's trick](https://www.youtube.com/watch?v=YEl5FNvi8Bs&t=10489s), [Voron Z-Locks](https://github.com/VoronDesign/VoronUsers/tree/main/printer_mods/tallman5/z-locks)], or [@andimoto's "Voron v2.4 Gantry Installation Hooks"](https://www.printables.com/model/173635-voron-v24-gantry-installation-hook-new-version)
 |                      | 115-125 |
 |                      | 126-127 | Route the A and B belts at this point and leave them loose in front of the X rail.
 |                      | 128     |
