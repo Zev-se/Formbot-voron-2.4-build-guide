@@ -99,7 +99,7 @@ Build sequence:
 | Stealthburner        | 13      | The 2024-06-23 kit uses a toolhead PCB (EBB SB2209 RP2040), so install the two threaded inserts for the optional toolhead PCB.
 | Stealthburner        | 14      | For the 2024-06-23 kit: uses umbilical instead of cable chains so skip this page.
 | Stealthburner        | 15-16   |
-| Stealthburner        | 17      | For the 2024-06-23 kit: BMG idler assembly may consist of three parts like the manual shows, or it may consists of just two parts.  As long as the shaft fits tightly and the gear spins freely it's probably ok.  ![](/images/BMG-Idler-Assembly-manual.png) ![](/images/BMG-Idler-Assembly-actual.jpg)
+| Stealthburner        | 17      | For the 2024-06-23 kit: BMG idler assembly may consist of three parts like the manual shows, or it may consists of just two parts.  As long as the axle snaps tightly in to the guidler and the gear spins freely and without wobble it's probably ok.  If you have problems with the axle popping loose from the guidler, carefully place a drop of cyanoacrylate adhesive (Super glue) in the two places where the axle snaps into the guidler.  Be careful not to glue the gear to the axle! ![](/images/BMG-Idler-Assembly-manual.png) ![](/images/BMG-Idler-Assembly-actual.jpg)
 | Stealthburner        | 18-20   |
 | Stealthburner        | 21      | The Drive Assembly may come as a single piece, with no assembly needed.  ![](/images/single-part-Drive-Assembly.jpg)
 | Stealthburner        | 22-30   |
