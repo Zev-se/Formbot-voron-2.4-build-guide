@@ -83,7 +83,9 @@ Build sequence:
 |                      | 129-131 | Skip these pages, TAP replaces the X carriage.
 | Voron TAP            | 1-23    |
 | Voron TAP            | 24      | Per the errata (you did read the errata, right) the threaded inserts are installed slightly differently.
-| Voron TAP            | 25-28   |
+| Voron TAP            | 25-26   |
+| Voron TAP            | 27      | Per the errata, the two M3x6 FHCS that thread in to the Tap\_Front part at an angle may be replaced with magnets, e.g. if your screws are non-magnetic. ![](/images/Tap_Front.png) ![](/images/tap-magnet-option.png)
+| Voron TAP            | 28      |
 | Voron TAP            | 29      | Per the errata we use M3x6, M3x12, and M3x16 SHCS to attach the rail.
 | Voron TAP            | 30      | The 2024-06-23 kit uses a "Trident style" X-axis microswitch.
 | Voron TAP            | 31      | Attach the belts to the Center and attach the Center to the MGN12 linear rail of the X axis.  This video is helpful: <https://www.youtube.com/watch?v=mJNCn72lQpU>
