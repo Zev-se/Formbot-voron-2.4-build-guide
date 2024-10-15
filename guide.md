@@ -80,7 +80,7 @@ Build sequence:
 |                      | 115-125 |
 |                      | 126-127 | Route the A and B belts at this point and leave them loose in front of the X rail.
 |                      | 128     |
-|                      | 129-l31 | Skip these pages, TAP replaces the X carriage.
+|                      | 129-131 | Skip these pages, TAP replaces the X carriage.
 | Voron TAP            | 1-23    |
 | Voron TAP            | 24      | Per the errata (you did read the errata, right) the threaded inserts are installed slightly differently.
 | Voron TAP            | 25-28   |
