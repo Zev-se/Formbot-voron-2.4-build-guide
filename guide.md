@@ -58,7 +58,9 @@ Build sequence:
 
 | Manual               | Pages   | Comment
 |----------------------|---------|---
-| Voron 2.4R2          | 1-27    | Smooth sailing.
+| Voron 2.4R2          | 1-14    | Smooth sailing.
+| Voron 2.4R2          | 15      | [These extrusion jigs](https://mods.vorondesign.com/details/SSoHrEC3VElDLwDLw2GA5Q) can be useful to ensure the frame is built square.
+| Voron 2.4R2          | 16-27   | Smooth sailing.
 |                      | 28      | Be sure to remove all protective paper or plastic film from both sides of the Deck Panel before mounting.  When mounted, the upper face of the Deck Panel will be visible inside the printer, and the lower face will be hidden inside the electronics bay under the printer.  So select whichever face you want to see all the time to face upwards.
 |                      | 29      | On 250, mount the DIN rails as shown in the Voron 2.4R2 Manual (you may have to shorten them slightly to fit).  On 300 (and 350?) turn the DIN rails 90 degrees and mount them parallel with the Bed Extrusions.
 |                      | 30-38   |
