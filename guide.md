@@ -51,7 +51,7 @@ These build instructions will reference the following manuals:
 - [The Formbot wiring guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)
 - [Pinout diagram for your controller](https://docs.vorondesign.com/build/electrical/controller_wiring.html#voron-2)
 - [Bigtreetech EBB SB2209 CAN (RP2040) manual](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/Build%20Guide/EBB%20SB2209%20CAN%20V1.0%EF%BC%88RP2040%EF%BC%89Build%20Guide_20240626.pdf)
-- [Bigtreetech MANTA M8P V1.0&V1.1 User Manual](https://github.com/bigtreetech/Manta-M8P/blob/master/V1.0_V1.1/BIGTREETECH%20MANTA%20M8P%20V1.0%26V1.1%20User%20Manual.pdf)
+- [Bigtreetech MANTA M8P V1.0&V1.1 User Manual](https://github.com/bigtreetech/Manta-M8P/blob/master/V1.0_V1.1/BIGTREETECH%20MANTA%20M8P%20V1.0%26V1.1%20User%20Manual.pdf) or [Bigtreetech MANTA M8P V2 User Manual](https://github.com/bigtreetech/Manta-M8P/blob/master/V2.0/BIGTREETECH%20MANTA%20M8P%20V2.0%20User%20Manual.pdf)
 - [Esoterical CAN Bus Guide](https://canbus.esoterical.online/)
 
 Build sequence:
@@ -115,7 +115,7 @@ Build sequence:
 | Stealthburner        | 56      | Don't screw in the screws yet, they'll come as part of the SB2209.
 | EBB SB2209           | N/A     | To work around [this problem](https://github.com/bigtreetech/EBB/issues/88), solder a 10 kOhm resistor between GPIO21 and +5V on the Probe connector. ![](/images/SB2209-RP2040-pullup.jpg)
 | EBB SB2209           | 2       | Install the SB0000 on top of the fan, then screw in the screws.
-| EBB SB2209           | 3-4     | Set the SB2209 jumper for the voltage shown on your fans, mine were all 24V.
+| EBB SB2209           | 3-4     | Set the SB2209 jumper for the voltage shown on your fans, mine were all 24V. Make sure you use the correct sized jumpers, there are several in the kit and they need to fit snugly to make a solid connection.
 | EBB SB2209           | 5       | Skip this page if your fans have 2-wire connections (non-PWM fans).
 | EBB SB2209           | 6-9     |
 | EBB SB2209           | 10      | Install the jumper for the 120R terminating resistor.
@@ -133,7 +133,8 @@ Build sequence:
 | EBB SB2209           | 18      | Skip this page, the kit does not use BLTouch or Klicky probe.
 | EBB SB2209           | 19      | Final assembly of Stealthburner!
 | EBB SB2209           | 20-24   |
-| EBB SB2209           | 25-29   | Flash the EBB SB2240.  I had to unplug USB, press and hold BOOT, and reconnect USB in order to get it into bootloader mode, clicking the RST button did not work.
+| EBB M8P              | 24-35 (V1) or 20-31 (V2) | Follow the instructions to flash an SD card with a compatible image. The M8P board has 2 SD card slots, one for the M8P firmware, another for the SoC. Make sure you put the SD card in the SoC SD card slot. You can power the M8P and CB1 from USB if you set the USB 5V jumper (make sure to remove this jumper once you switch to 24V power). Once you have an ssh connection you can continue
+| EBB SB2209           | 25-29   | Flash the EBB SB2240.  I had to unplug USB, press and hold BOOT, and reconnect USB in order to get it into bootloader mode, clicking the RST button did not work. This requires you to have the main SoC running (CB1, CM4, Raspberry PI, ..)
 | Voron TAP            | 36      |
 | Voron 2.4R2          | 143-144 | Skip these pages, the kit doesn't use a Z probe (uses Tap instead).
 | Voron 2.4R2          | 145     | Skip this pages, the kit doesn't use a hall-effect X endstop.
@@ -159,6 +160,10 @@ Build sequence:
 | Voron 2.4R2          | 186-189 | Skip these pages, the kit does not include Wago clamps.
 | Voron 2.4R2          | 190-191 | Skip these pages, the kit does not include a 5V PSU or a Raspberry Pi.
 | Voron 2.4R2          | 192     | This kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
+| Esoterical CAN Guide |         | At this point everything is set up to run from 24V (make sure you have removed the USB 5V jumpers or you will fry the USB controller), including the CAN cable power. Plug in the CAN connector on the toolhead, and the connector on the M8P.
+| Esoterical CAN Guide |         | Make the M8P a USB-CAN bridge. There is no dedicated CAN board so the M8P will act as a bridge between the internal USB communication with the CB1 and the CAN bus with M8P and SB2209 as CAN devices
+| Esoterical CAN Guide |         | Follow the Mainboard flashing instructions. The M8P V1 and V2 have different settings (different chip, different offset, different crystal), make sure to check the correct EBB M8P guide. The CAN pins on the M8P V2 are PD0/PD1 ([pinout](https://github.com/bigtreetech/Manta-M8P/blob/master/V2.0/Hardware/BIGTREETECH%20MANTA%20M8P%20V2.0%20PinOut.png), check the pinout diagram of your board
+| Esoterical CAN Guide |         | Follow the Toolhead flashing instructions. If you've already flashed katapult in a previous step with the correct CAN settings it should show up on the CAN bus, you can then flash klipper over CAN0. If not follow the instructions meticiulously
 | Voron 2.4R2          | 193     | Run the Z motor wires, but note that this kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
 | Voron 2.4R2          | 194-199 | Older non-CAN, non-umbilical kit: mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forget the extra LED cable.  Newer kit with CAN & umbilical: skip these pages, the umbilical replaces the X and Y cable chains.
 | Voron 2.4R2          | 200     | The B-motor cable is routed in the 2020 grove under the gantry and held in place with a plastic cover instead of zipties.  Trim the plastic cover to length.  ![](/images/A_B_motor_cable.jpeg)
