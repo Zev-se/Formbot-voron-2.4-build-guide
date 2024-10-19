@@ -48,17 +48,19 @@ These build instructions will reference the following manuals:
 - [The Stealthburner Assembly Manual](https://github.com/VoronDesign/Voron-Stealthburner/raw/main/Manual/Assembly_Manual_SB.pdf)
 - [The Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf)
 - [Voron Tap r8 errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md)
-- [The Formbot wiring guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)
-- [Pinout diagram for your controller](https://docs.vorondesign.com/build/electrical/controller_wiring.html#voron-2)
+- [The Formbot wiring guide](https://github.com/FORMBOT/Voron-2.4/tree/main/Diagrams) ([old version](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)) and [schematic overview](https://drive.google.com/file/d/150u_T2eWLyC1sthwrm-xLMOyLApJ4kwb/view)
+- [Pinout diagram for your controller](https://docs.vorondesign.com/build/electrical/controller_wiring.html#voron-2), [M8P V1.0](https://github.com/bigtreetech/Manta-M8P/blob/master/V1.0_V1.1/Hardware/BIGTREETECH%20MANTA%20M8P%20V1.0%20PinOut.png) and [M8P V2.0](https://github.com/bigtreetech/Manta-M8P/blob/master/V2.0/Hardware/BIGTREETECH%20MANTA%20M8P%20V2.0%20PinOut.png)
 - [Bigtreetech EBB SB2209 CAN (RP2040) manual](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/Build%20Guide/EBB%20SB2209%20CAN%20V1.0%EF%BC%88RP2040%EF%BC%89Build%20Guide_20240626.pdf)
-- [Bigtreetech MANTA M8P V1.0&V1.1 User Manual](https://github.com/bigtreetech/Manta-M8P/blob/master/V1.0_V1.1/BIGTREETECH%20MANTA%20M8P%20V1.0%26V1.1%20User%20Manual.pdf)
+- [Bigtreetech MANTA M8P V1.0&V1.1 User Manual](https://github.com/bigtreetech/Manta-M8P/blob/master/V1.0_V1.1/BIGTREETECH%20MANTA%20M8P%20V1.0%26V1.1%20User%20Manual.pdf) or [Bigtreetech MANTA M8P V2 User Manual](https://github.com/bigtreetech/Manta-M8P/blob/master/V2.0/BIGTREETECH%20MANTA%20M8P%20V2.0%20User%20Manual.pdf)
 - [Esoterical CAN Bus Guide](https://canbus.esoterical.online/)
 
 Build sequence:
 
 | Manual               | Pages   | Comment
 |----------------------|---------|---
-| Voron 2.4R2          | 1-27    | Smooth sailing.
+| Voron 2.4R2          | 1-14    | Smooth sailing.
+| Voron 2.4R2          | 15      | [These extrusion jigs](https://mods.vorondesign.com/details/SSoHrEC3VElDLwDLw2GA5Q) can be useful to ensure the frame is built square.
+| Voron 2.4R2          | 16-27   | Smooth sailing.
 |                      | 28      | Be sure to remove all protective paper or plastic film from both sides of the Deck Panel before mounting.  When mounted, the upper face of the Deck Panel will be visible inside the printer, and the lower face will be hidden inside the electronics bay under the printer.  So select whichever face you want to see all the time to face upwards.
 |                      | 29      | On 250, mount the DIN rails as shown in the Voron 2.4R2 Manual (you may have to shorten them slightly to fit).  On 300 (and 350?) turn the DIN rails 90 degrees and mount them parallel with the Bed Extrusions.
 |                      | 30-38   |
@@ -108,14 +110,16 @@ Build sequence:
 | Stealthburner        | 31-32   | For kits with umbilical, skip this part and these pages.  Later we'll attach the BTT "Cable Bridge" that replaces the stock Voron "Chain Anchor".
 | Stealthburner        | 33      |
 | Stealthburner        | 34      | If you have a CAN kit using EBB SB2209/SB000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Cable_Cover_For_PCB_V1.1.STL>
-| Stealthburner        | 35-42   |
+| Stealthburner        | 35-39   |
+| Stealthburner        | 40      | Mind the orientation of the hotend. With dragonburner hotends the heat block needs to point forward or it will touch and probably melt the TAP plate (see [this](https://youtu.be/7x-eafpESLc?t=1027) video).
+| Stealthburner        | 41-42   |
 | Stealthburner        | 43      | Some kits will come with multiple PTFE tubes, use the shorter one with ~4 mm OD and ~2 mm ID.
 | Stealthburner        | 44-54   |
 | Stealthburner        | 55      | Discard the half of the fan housing that doesn't have the fan motor and rotor mounted on it.
 | Stealthburner        | 56      | Don't screw in the screws yet, they'll come as part of the SB2209.
 | EBB SB2209           | N/A     | To work around [this problem](https://github.com/bigtreetech/EBB/issues/88), solder a 10 kOhm resistor between GPIO21 and +5V on the Probe connector. ![](/images/SB2209-RP2040-pullup.jpg)
 | EBB SB2209           | 2       | Install the SB0000 on top of the fan, then screw in the screws.
-| EBB SB2209           | 3-4     | Set the SB2209 jumper for the voltage shown on your fans, mine were all 24V.
+| EBB SB2209           | 3-4     | Set the SB2209 jumper for the voltage shown on your fans, mine were all 24V. Make sure you use the correct sized jumpers, there are several in the kit and they need to fit snugly to make a solid connection.
 | EBB SB2209           | 5       | Skip this page if your fans have 2-wire connections (non-PWM fans).
 | EBB SB2209           | 6-9     |
 | EBB SB2209           | 10      | Install the jumper for the 120R terminating resistor.
@@ -132,8 +136,10 @@ Build sequence:
 | EBB SB2209           | 17      | The kit comes with a pre-crimped probe cable to use for Tap and the Filament Runout Sensor.
 | EBB SB2209           | 18      | Skip this page, the kit does not use BLTouch or Klicky probe.
 | EBB SB2209           | 19      | Final assembly of Stealthburner!
-| EBB SB2209           | 20-24   |
-| EBB SB2209           | 25-29   | Flash the EBB SB2240.  I had to unplug USB, press and hold BOOT, and reconnect USB in order to get it into bootloader mode, clicking the RST button did not work.
+| EBB SB2209           | 20-24   | There is a PG7 Cable gland in the kit and [printed part](https://github.com/FORMBOT/Voron-2.4/blob/main/STL/Accent/PG7-Umbilical%20Motor%20Mount.stl) to wire the CAN cable (with piano wire) to the A drive. Unscrew the PG7 connector, route the CAN wire through (you might need to remove the rubber insert first to get the 2 pin connector through), then screw in the bottom into the printed part and screw the top into the bottom part, this acts as cable relief so the cable should have been captured snugly. Make sure you move the gantry around so the CAN cable is long enough to allow full range of movement.
+| EBB M8P              | 16 (V1) or 12 (V2) | In order to flash the toolhead you need the CB1. Install the CB1 board onto the M8P. Make sure the board is seated correctly on both sides, there should be an audible click as the connectors snap in place.
+| EBB M8P              | 24-35 (V1) or 20-31 (V2) | Follow the instructions to flash an SD card with a compatible image. The M8P board has 2 SD card slots, one for the M8P firmware, another for the SoC. Make sure you put the SD card in the SoC SD card slot. You can power the M8P and CB1 from USB if you set the USB 5V jumper (make sure to remove this jumper once you switch to 24V power). Once you have an ssh connection you can continue
+| EBB SB2209           | 25-29   | Flash the EBB SB2240.  I had to unplug USB, press and hold BOOT, and reconnect USB in order to get it into bootloader mode, clicking the RST button did not work. This requires you to have the main SoC running (CB1, CM4, Raspberry PI, ..)
 | Voron TAP            | 36      |
 | Voron 2.4R2          | 143-144 | Skip these pages, the kit doesn't use a Z probe (uses Tap instead).
 | Voron 2.4R2          | 145     | Skip this pages, the kit doesn't use a hall-effect X endstop.
@@ -152,17 +158,23 @@ Build sequence:
 | Voron 2.4R2          | 171     |
 | Voron 2.4R2          | 172     | Skip this page, no 5V supply with this kit.
 | Voron 2.4R2          | 173     |
-| Voron 2.4R2          | 174-179 | Skip these pages, the Formbot kit uses a Manta M8P control board instead.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
-| Formbot Wiring guide | 1-4     | For older (non-CAN) kits: Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what.
+| Voron 2.4R2          | 174-179 | Skip these pages, the Formbot kit uses a Manta M8P control board instead.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>. My kit came with BTT TMC2209 V1.3 stepper motor drivers, verify yours are too, otherwise the jumpers in the linked document might need to be set differently.
+| Formbot Wiring guide |         | For older (non-CAN) kits: Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what. 
+| Formbot Wiring guide |         | The CAN cable has 2 leads for 24V power, you need to crimp these and connect them to the PSU (I used a bit of wire to extend them so I didn't have to unravel the CAN communication wires)
+| Formbot Wiring guide |         | If your frame is anodized the coating will not be conductive, when attaching protective earth to the frame, scrape away some coating so the T-nut makes a solid contact. You can test for continuity on any frame screw on all the extrusions to ensure the frame is properly earthed.
 | Voron 2.4R2          | 180-183 | Wire up the 24V PSU.  Test it before connecting 24V to anything.
 | Voron 2.4R2          | 184-185 |
 | Voron 2.4R2          | 186-189 | Skip these pages, the kit does not include Wago clamps.
 | Voron 2.4R2          | 190-191 | Skip these pages, the kit does not include a 5V PSU or a Raspberry Pi.
 | Voron 2.4R2          | 192     | This kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
+| Esoterical CAN Guide |         | At this point everything is set up to run from 24V (make sure you have removed the USB 5V jumpers or you will fry the USB controller), including the CAN cable power. Plug in the CAN connector on the toolhead, and the connector on the M8P.
+| Esoterical CAN Guide |         | Make the M8P a USB-CAN bridge. There is no dedicated CAN board so the M8P will act as a bridge between the internal USB communication with the CB1 and the CAN bus with M8P and SB2209 as CAN devices
+| Esoterical CAN Guide |         | Follow the Mainboard flashing instructions. The M8P V1 and V2 have different settings (different chip, different offset, different crystal), make sure to check the correct EBB M8P guide. For example the CAN pins on the M8P V2 are PD0/PD1 ([pinout](https://github.com/bigtreetech/Manta-M8P/blob/master/V2.0/Hardware/BIGTREETECH%20MANTA%20M8P%20V2.0%20PinOut.png) but check the pinout diagram of your board)
+| Esoterical CAN Guide |         | Follow the Toolhead flashing instructions. If you've already flashed katapult in a previous step with the correct CAN settings it should show up on the CAN bus, you can then flash klipper over CAN0. If not follow the instructions meticiulously
 | Voron 2.4R2          | 193     | Run the Z motor wires, but note that this kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
 | Voron 2.4R2          | 194-199 | Older non-CAN, non-umbilical kit: mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forget the extra LED cable.  Newer kit with CAN & umbilical: skip these pages, the umbilical replaces the X and Y cable chains.
 | Voron 2.4R2          | 200     | The B-motor cable is routed in the 2020 grove under the gantry and held in place with a plastic cover instead of zipties.  Trim the plastic cover to length.  ![](/images/A_B_motor_cable.jpeg)
-| Voron 2.4R2          | 201-202 | Mount the two ends without the chain attached.  Adjust the number of links in the Z cable chain to get it to the correct length.  Open the gates/covers in the chain links before mounting.
+| Voron 2.4R2          | 201-202 | Mount the two ends without the chain attached.  Adjust the number of links in the Z cable chain to get it to the correct length.  Open the gates/covers in the chain links before mounting. Temporarily remove the PG7 bracket from the B motor mount to be able to attach the Z chain.
 | Voron 2.4R2          | 203     |
 | Voron 2.4R2          | 204     | Skip this page if you have a newer kit with CAN/umbilical, it has no cables routed along the gantry.
 | Voron 2.4R2          | 205-209 | Skip these pages, follow the M8P instructions on the Voron Designs website instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>.  Do the Electrical Wiring, Software Installation, Software Configuration, Initial Setup, Slicer Setup, and First Print sections.  First print wooo!
