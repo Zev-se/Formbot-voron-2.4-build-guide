@@ -108,7 +108,9 @@ Build sequence:
 | Stealthburner        | 31-32   | For kits with umbilical, skip this part and these pages.  Later we'll attach the BTT "Cable Bridge" that replaces the stock Voron "Chain Anchor".
 | Stealthburner        | 33      |
 | Stealthburner        | 34      | If you have a CAN kit using EBB SB2209/SB000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Cable_Cover_For_PCB_V1.1.STL>
-| Stealthburner        | 35-42   |
+| Stealthburner        | 35-39   |
+| Stealthburner        | 40      | Mind the orientation of the hotend. With dragonburner hotends the heat block needs to point forward or it will touch and probably melt the TAP plate (see [this](https://youtu.be/7x-eafpESLc?t=1027) video).
+| Stealthburner        | 41-42   |
 | Stealthburner        | 43      | Some kits will come with multiple PTFE tubes, use the shorter one with ~4 mm OD and ~2 mm ID.
 | Stealthburner        | 44-54   |
 | Stealthburner        | 55      | Discard the half of the fan housing that doesn't have the fan motor and rotor mounted on it.
