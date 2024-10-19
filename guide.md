@@ -159,7 +159,9 @@ Build sequence:
 | Voron 2.4R2          | 172     | Skip this page, no 5V supply with this kit.
 | Voron 2.4R2          | 173     |
 | Voron 2.4R2          | 174-179 | Skip these pages, the Formbot kit uses a Manta M8P control board instead.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>. My kit came with BTT TMC2209 V1.3 stepper motor drivers, verify yours are too, otherwise the jumpers in the linked document might need to be set differently.
-| Formbot Wiring guide | 1-4     | For older (non-CAN) kits: Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what. The CAN cable has 2 leads for 24V power, you need to crimp these and connect them to the PSU (I used a bit of wire to extend them so I didn't have to unravel the CAN communication wires)
+| Formbot Wiring guide |         | For older (non-CAN) kits: Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what. 
+| Formbot Wiring guide |         | The CAN cable has 2 leads for 24V power, you need to crimp these and connect them to the PSU (I used a bit of wire to extend them so I didn't have to unravel the CAN communication wires)
+| Formbot Wiring guide |         | If your frame is anodized the coating will not be conductive, when attaching protective earth to the frame, scrape away some coating so the T-nut makes a solid contact. You can test for continuity on any frame screw on all the extrusions to ensure the frame is properly earthed.
 | Voron 2.4R2          | 180-183 | Wire up the 24V PSU.  Test it before connecting 24V to anything.
 | Voron 2.4R2          | 184-185 |
 | Voron 2.4R2          | 186-189 | Skip these pages, the kit does not include Wago clamps.
