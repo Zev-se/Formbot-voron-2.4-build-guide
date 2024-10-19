@@ -48,7 +48,7 @@ These build instructions will reference the following manuals:
 - [The Stealthburner Assembly Manual](https://github.com/VoronDesign/Voron-Stealthburner/raw/main/Manual/Assembly_Manual_SB.pdf)
 - [The Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf)
 - [Voron Tap r8 errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md)
-- [The Formbot wiring guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)
+- [The Formbot wiring guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing) and [schematic overview](https://drive.google.com/file/d/150u_T2eWLyC1sthwrm-xLMOyLApJ4kwb/view)
 - [Pinout diagram for your controller](https://docs.vorondesign.com/build/electrical/controller_wiring.html#voron-2)
 - [Bigtreetech EBB SB2209 CAN (RP2040) manual](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/Build%20Guide/EBB%20SB2209%20CAN%20V1.0%EF%BC%88RP2040%EF%BC%89Build%20Guide_20240626.pdf)
 - [Bigtreetech MANTA M8P V1.0&V1.1 User Manual](https://github.com/bigtreetech/Manta-M8P/blob/master/V1.0_V1.1/BIGTREETECH%20MANTA%20M8P%20V1.0%26V1.1%20User%20Manual.pdf) or [Bigtreetech MANTA M8P V2 User Manual](https://github.com/bigtreetech/Manta-M8P/blob/master/V2.0/BIGTREETECH%20MANTA%20M8P%20V2.0%20User%20Manual.pdf)
@@ -154,7 +154,7 @@ Build sequence:
 | Voron 2.4R2          | 172     | Skip this page, no 5V supply with this kit.
 | Voron 2.4R2          | 173     |
 | Voron 2.4R2          | 174-179 | Skip these pages, the Formbot kit uses a Manta M8P control board instead.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
-| Formbot Wiring guide | 1-4     | For older (non-CAN) kits: Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what.
+| Formbot Wiring guide | 1-4     | For older (non-CAN) kits: Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what. The CAN cable has 2 leads for 24V power, you need to crimp these and connect them to the PSU (I used a bit of wire to extend them so I didn't have to unravel the CAN communication wires)
 | Voron 2.4R2          | 180-183 | Wire up the 24V PSU.  Test it before connecting 24V to anything.
 | Voron 2.4R2          | 184-185 |
 | Voron 2.4R2          | 186-189 | Skip these pages, the kit does not include Wago clamps.
