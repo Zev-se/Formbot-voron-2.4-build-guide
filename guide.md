@@ -84,7 +84,9 @@ Build sequence:
 |                      | 126-127 | Route the A and B belts at this point and leave them loose in front of the X rail.
 |                      | 128     |
 |                      | 129-131 | Skip these pages, TAP replaces the X carriage.
-| Voron TAP            | 1-23    |
+| Voron TAP            | 1-17    |
+| Voron TAP            | 18      | Use the Voron project's printed [MGN9 Assembly Tool](https://github.com/VoronDesign/Voron-Tap/blob/main/STLs/MGN9_Assembly_Tool.stl) rather than the similar part that comes with Formbot's kit.  Formbot's part is too fat and causes some inconvenience when reinstalling the carriage onto the rail later.
+| Voron TAP            | 19-23   |
 | Voron TAP            | 24      | Per the errata (you did read the errata, right) the threaded inserts are installed slightly differently.
 | Voron TAP            | 25-26   |
 | Voron TAP            | 27      | Per the errata, the two M3x6 FHCS that thread in to the Tap\_Front part at an angle may be replaced with magnets, e.g. if your screws are non-magnetic. ![](/images/Tap_Front.png) ![](/images/tap-magnet-option.png)
