@@ -9,8 +9,9 @@ Please report any incorrect or missing info here on github or in the Voron or Fo
 
 Formbot has sold a couple of different Voron 2.4 kits, and it's a bit unclear how they've changed.  We'll try to collect the info here, please update this document where it is incomplete or incorrect.
 
-
-### "Voron 2.4 R2 Pro+ CoreXY 3D Printer Kit with M8P+CB1 Board and Canbus Wiring System" (ordered 2024-06-23)
+<details>
+  <summary>"Voron 2.4 R2 Pro+ CoreXY 3D Printer Kit with M8P+CB1 Board and Canbus Wiring System" (ordered 2024-06-23)</summary>
+  
 
 Advertised features:
 * TAP leveling sensor
@@ -37,6 +38,22 @@ Noteworthy details:
 * Comes with two PT1000 thermal sensors
 * The heated bed has an NTC 100K B3950 thermistor.
 * The "SB2209 CAN (RP2040)" includes ADXL345 accelerometer for input shaping
+
+</details>
+
+<details>
+  <summary>"Voron 2.4 R2 Pro+ CoreXY 3D Printer Kit with M8P+CB1 Board and Canbus Wiring System" (ordered 2024-09-17, shipped from Czech warehouse)</summary>
+  Main differences seem to be I got a M8P v2.0 board and only 1 PT1000 sensor.
+  I've ordered a dragonburner HF, which came seperately. The kit comes standard with a V6 clone.
+  This is the full BOM as advertised on the website at the time of buying:
+  
+![image](https://github.com/user-attachments/assets/fd71c404-1efa-4307-884f-6c9a8d4f4551)
+![image](https://github.com/user-attachments/assets/393d47f7-c07c-46e9-b278-08e8bbacaffc)
+![image](https://github.com/user-attachments/assets/6053423b-8034-40e9-8971-af1b120be359)
+
+
+</details>
+
 
 
 ## The build process
@@ -164,6 +181,7 @@ Build sequence:
 | Voron 2.4R2          | 174-179 | Skip these pages, the Formbot kit uses a Manta M8P control board instead.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>. My kit came with BTT TMC2209 V1.3 stepper motor drivers, verify yours are too, otherwise the jumpers in the linked document might need to be set differently.
 | Formbot Wiring guide |         | For older (non-CAN) kits: Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what. 
 | Formbot Wiring guide |         | The CAN cable has 2 leads for 24V power, you need to crimp these and connect them to the PSU (I used a bit of wire to extend them so I didn't have to unravel the CAN communication wires)
+| Formbot Wiring guide |         | If you can't find the 3 IN 6 OUT terminals in your kit, check the bag with the exhaust parts, in my case it was tucked away in there
 | Formbot Wiring guide |         | If your frame is anodized the coating will not be conductive, when attaching protective earth to the frame, scrape away some coating so the T-nut makes a solid contact. You can test for continuity on any frame screw on all the extrusions to ensure the frame is properly earthed.
 | Voron 2.4R2          | 180-183 | Wire up the 24V PSU.  Test it before connecting 24V to anything.
 | Voron 2.4R2          | 184-185 |
