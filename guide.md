@@ -54,8 +54,6 @@ Noteworthy details:
 
 </details>
 
-
-
 ## The build process
 
 A list of tools used to assemble the kit: [tools](tools.md)
@@ -217,7 +215,7 @@ Build sequence:
 | Voron 2.4R2          | 232     | Use the red VFB tape, not the yellow foam tape.
 | Voron 2.4R2          | 233-234 |
 | Voron 2.4R2          | 235-236 | I found it easier to start with the screws and hammer head T-nuts off the Z belt covers.  I slid the Z belt cover into place, inserted the hammer head T-nut into the extrusion slot, slid it under the hole in the Z belt cover, and screwed in the screw.
-| Voron 2.4R2          | 237-244 | Hammer head T-nuts are not my favorite, super fiddly.
+| Voron 2.4R2          | 237-244 | Hammer head T-nuts are not my favorite, super fiddly. What seemed to work for me was to put the hammernuts on the screws a couple of turns, then hold the part in place with the hammernuts inserted in the channel, then *loosen* the screw so the hammernut completely backs out against the back of the extrusion channel, and then tighten. Loosening it first ensures it's completely in the extrusion channel and can turn while tightening. Once I did it like that installing the panels were a breeze.
 | Voron 2.4R2          | 245-247 |
 | Voron 2.4R2          | 248-249 | Attach the hinges to the doors but don't attach the handles.  Test fit the doors and sand the edges to fit, then attach the handles.
 | Voron 2.4R2          | 250-251 |
@@ -230,6 +228,7 @@ Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and cont
 
 Now follow the post build instructions to make sure you've done everything correct
 
+For tuning I've found that the Voron website is a bit sparse, Bed meshing section is okay (note that Klipper supports Adaptive bed meshing now). For input shaping and belt tension similarity testing I recommend [Klippain](https://github.com/Frix-x/klippain) and general tuning [Ellis print tuning guide](https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html).
 
 ## Notes from the build
 
