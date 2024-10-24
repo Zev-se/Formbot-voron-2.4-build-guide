@@ -228,7 +228,7 @@ Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and cont
 
 Now follow the post build instructions to make sure you've done everything correct
 
-For tuning I've found that the Voron website is a bit sparse, Bed meshing section is okay (note that Klipper supports Adaptive bed meshing now). For input shaping and belt tension similarity testing I recommend [Klippain](https://github.com/Frix-x/klippain) and general tuning [Ellis print tuning guide](https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html).
+For tuning I've found that the Voron website is a bit sparse, Bed meshing section is okay (note that Klipper supports Adaptive bed meshing now). For input shaping and belt tension similarity testing I recommend [Klippain Shake&Tune]([https://github.com/Frix-x/klippain](https://github.com/Frix-x/klippain-shaketune)) and general tuning [Ellis print tuning guide](https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html).
 
 ## Notes from the build
 
