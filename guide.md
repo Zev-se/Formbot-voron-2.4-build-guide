@@ -171,7 +171,7 @@ Build sequence:
 | Voron 2.4R2          | 158-161 | Skip these pages, the kit uses Tap instead of a Z endstop.
 | Voron 2.4R2          | 162-164 | Different versions of this kit handle X & Y endstops (limit switches) in different ways. Newer versions of the kit use SB2209 to put the X endstop on the toolhead and the Y endstop on the right-rear coreXY motor: <https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with->. The older version of the kit mounts the limit switches in a different way than mainline Voron: ![](/images/voron_limit_switch.png) ![](/images/wrongly_mounted_switch.jpeg)
 | Voron 2.4R2          | 165-167 |
-| Voron 2.4R2          | 168     | Note: For the rest of the assembly process, refer to the Voron 2.4r2 manual and the Formbot wiring guide for placement of the electronics.
+| Voron 2.4R2          | 168     | Note: For the rest of the assembly process, refer to the Voron 2.4r2 manual and the Formbot wiring guide for placement of the electronics. Also, if you're unsure as to what is what, please look at the image in the notes from the build below.
 | Voron 2.4R2          | 169     | Install the 24V power supply and its mounts on the DIN rail.  For 300mm, mount as shown in the Formbot Wiring Guide.  For 250mm, mount as shown in the Voron 2.4r2 manual. Make sure you add the extra mounting bracket.
 | Voron 2.4R2          | 170     | Install the Manta 8P controller and its mounts on the DIN rail.
 | Voron 2.4R2          | 171     |
