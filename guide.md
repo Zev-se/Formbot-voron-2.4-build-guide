@@ -90,7 +90,9 @@ Build sequence:
 |                      | 64      | I'm using the default Voron Design `a_drive_frame_upper` part, not Formbot's version.  I'm then using @decidophobia's "Voron V2.4 PG7 Umbilical & Y Endstop Relocation with cable cutout - REMIX" part from printables to mount the Y endstop and anchor the PG7 gland.  <https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with->
 |                      | 65-83   |
 |                      | 84      | Do not install heat-set threaded inserts into the cable chain mount, the Formbot kit uses an umbilical instead of cable chains.
-|                      | 85-103  |
+|                      | 85-95   |
+|                      | 96      | Keep the following in mind when installing the XY mount bolts, courtesy of [@Reth](https://www.youtube.com/@The_original_Reth). How tight some of these bolts are will affect the belt tension and input shaper graphs ![image](https://github.com/user-attachments/assets/8eeea914-5536-4123-9a23-faac687f491c)
+|                      | 97-103  |
 |                      | 104     | Do not install the cable chain mount, use M5x10 BHCS to attach both XY Joints to the gantry.
 |                      | 105-109 |
 |                      | 110     | Use the part for normal microswitch endstops (`z_joint_upper`), not the Hall effect version.
