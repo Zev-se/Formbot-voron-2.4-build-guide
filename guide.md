@@ -231,6 +231,8 @@ Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and cont
 
 [Software Configuration](https://docs.vorondesign.com/build/software/configuration.html)
 
+It's highly recommended to install the [Kipper Backup](https://github.com/Staubgeborener/klipper-backup) add-on. It's optional but it will save you soner or later. If you want a guide or just see how it works look at [ModBots youtube clip](https://www.youtube.com/watch?v=47qV9BE2n_Y) about it. Do this before you start changing the settings so that you can see what you've done, this will help when asking for help with pinouts on Discord.
+
 Now follow the post build instructions to make sure you've done everything correct
 
 For tuning I've found that the Voron website is a bit sparse, Bed meshing section is okay (note that Klipper supports Adaptive bed meshing now). For input shaping and belt tension similarity testing I recommend [Klippain Shake&Tune](https://github.com/Frix-x/klippain-shaketune) and general tuning [Ellis print tuning guide](https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html).
