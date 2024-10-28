@@ -86,6 +86,7 @@ Build sequence:
 |                      | 55-57   |
 |                      | 58      | The Formbot kit comes with "Bakelite Isolation Columns", use these instead of M4 nuts as spacers.  ![](/images/bakelite-isolation-columns.png)
 |                      | 59-63   | You don't have to install the bed at this point in the guide, it keeps the weight down if you install it when doing the electronics. If you plan on using the Nevermore filter I highly recommend you to build and install that before you install the bed, otherwise you'll have to take the bed back out (and that is a pain when everything is hooked up and the panels are already on). 
+|                      |         | Shift the bed forward by 0.5-1cm if you plan on using a nozzle wiper so the nozzle so the nozzle can reach behind the bed. The TAP plate will also move the nozzle a a few mm forward.
 | Nevermore            |         | [This](https://www.youtube.com/watch?v=or2v4V1QAaw) is a good guide to building the Nevermore V5, as its github is a bit lacking. My kit came with 2 wago connectors to connect the fans to the wiring, but I opted to crimp one of the JST male connectors on the wiring (you have those in the kit with the SB2209 but as the kit already comes with precrimped wires those are spares). I also used a bit of extrusion plastic cover (included in the kit) to tuck the wiring into the side of the extrusion where the bed rests on, that way the cable can never touch the hot bed. The printed parts on the [Formbot github](https://github.com/FORMBOT/Voron-2.4/tree/main/STL/Primary/Nevermore) are slightly different from the ones on the official [Nevermore github page](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V5_Duo/V2). Securing the magnets was more of a pain with the formbot version and still required superglue to keep them seated. There is a [V6](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V6) that might be worth looking into if you have to print the parts anyway.
 |                      | 64      | I'm using the default Voron Design `a_drive_frame_upper` part, not Formbot's version.  I'm then using @decidophobia's "Voron V2.4 PG7 Umbilical & Y Endstop Relocation with cable cutout - REMIX" part from printables to mount the Y endstop and anchor the PG7 gland.  <https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with->
 |                      | 65-83   |
@@ -127,7 +128,8 @@ Build sequence:
 | Stealthburner        | 17      | For the 2024-06-23 kit: BMG idler assembly may consist of three parts like the manual shows, or it may consists of just two parts.  As long as the axle snaps tightly in to the guidler and the gear spins freely and without wobble it's probably ok.  If you have problems with the axle popping loose from the guidler, carefully place a drop of cyanoacrylate adhesive (Super glue) in the two places where the axle snaps into the guidler.  Be careful not to glue the gear to the axle! ![](/images/BMG-Idler-Assembly-manual.png) ![](/images/BMG-Idler-Assembly-actual.jpg)
 | Stealthburner        | 18-20   |
 | Stealthburner        | 21      | The Drive Assembly may come as a single piece, with no assembly needed.  ![](/images/single-part-Drive-Assembly.jpg)
-| Stealthburner        | 22-30   |
+| Stealthburner        | 22-29   |
+| Stealthburner        | 30      | Write down or take a picture of which extrusion motor you have with the kit. Once it's in the toolhead the label will be hard to read and you'll need it later in the config.
 | Stealthburner        | 31-32   | For kits with umbilical, skip this part and these pages.  Later we'll attach the BTT "Cable Bridge" that replaces the stock Voron "Chain Anchor".
 | Stealthburner        | 33      |
 | Stealthburner        | 34      | If you have a CAN kit using EBB SB2209/SB000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Cable_Cover_For_PCB_V1.1.STL>
@@ -206,6 +208,7 @@ Build sequence:
 | Software config      |         | Configure the SB2209 Toolhead, starting from the sample cfg provided [here](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/sample-bigtreetech-ebb-sb-rp2040-canbus-v1.0.cfg). Make use of the pinout diagram to verify that the GPIO's used are correct with how you plugged things in. If you have a PT1000 temperature sensor plugged in into the 4 pin 31865 socket, remove the sensor_pin and sensor_type in extruder and uncomment the sensor_type: MAX31865 block. The temperature is accessed through communication with the MAX31865 chip
 | Software config      |         | Configure the M8P mainboard, start from the provided sample cfg on the Voron repo [here](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/M8P). Remove unnecessary things, verify the pins with the pinout diagram, the heater bed sensor type you can find on the back of the heater, mine was Generic 3950. Don't forget to set the X-endstop to the toolhead GPIO pin (when referencing a GPIO pin from a different MCU, you need to prefix it with its name so it becomes `pin: EBBCAN:gpio6`). Don't forget to copy over the extruder settings to the toolhead config, the sample SB2209 config is not set up for Clockwork 2.
 | Software config      |         | Configure TAP, follow the post-install instructions on the [github page](https://github.com/VoronDesign/Voron-Tap). You will need to pull up the pin with `^`, with the provided wiring TAP is connected to gpio22 so it becomes `pin: ^EBBCan:gpio22` (verify with your pinout if it's the same for you). Skip PROBE_CALIBRATE for now, do that after homing and quad gantry levelling when the Initial Startup section on the Voron website calls for it.
+| Software config      |         | For the stealthburner LEDs to work you'll need to add [this](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg) config file to Klipper.
 |                      |         | Continue on the Voron website with the Initial startup, Slicer Setup, and First Print sections. First print wooo!
 | Voron 2.4R2          | 210     |
 | Voron 2.4R2          | 211     | Skip this page, the Formbot kit uses a different display with different mounting parts.
@@ -226,16 +229,19 @@ Build sequence:
 | Voron 2.4R2          | 250-251 |
 | Voron 2.4R2          | 252     | The Formbot kit supplies the filter access cover, but feel free to ignore that part and print your own if you want it in the accent color.
 | Voron 2.4R2          | 253-259 |
-
-Voron V2.4R2 & Formbot Wiring PDF: Attach cables between breakout board and control board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
-
-[Software Configuration](https://docs.vorondesign.com/build/software/configuration.html)
+| BTT Screen           |         | Install KlipperScreen through [KIAUH](https://github.com/dw-0/kiauh) and plug in the HDMI into HDMI0 and the USB into one of the USBs of the mainboard. It should work out of the box. I chose [this](https://www.printables.com/model/612525-btt-hdmi5-mount-conector-hide) mount which also hides the connectors.
+| LED light            |         | The kit comes with a 24V LED light. It can be mounted anywhere but make sure the wires are long enough to reach the HE1 terminal on the mainboard. I used a bit of extrusion cable cover to tuck the cable away neatly.
+| Nozzle brush         |         | The kit also comes with a brass? nozzle brush. It can be used to clean the nozzle manually or you can a [Nozzle scrubber with bucket](https://www.printables.com/model/462459-nozzle-scrubber-with-a-large-bucket-for-voron-24) and a macro to do it automatically before each print. Make sure the brush is brass and not brass steel, the latter will damage the nozzle. I opted to buy a silicon brush (like the one for [Bambu A1](https://www.aliexpress.com/i/1005007468595906.html)) and use [this](https://www.printables.com/model/786705-voron-24-nozzle-brush-using-bambu-labs-a1-silicone) model instead.
 
 It's highly recommended to install the [Kipper Backup](https://github.com/Staubgeborener/klipper-backup) add-on. It's optional but it will save you soner or later. If you want a guide or just see how it works look at [ModBots youtube clip](https://www.youtube.com/watch?v=47qV9BE2n_Y) about it. Do this before you start changing the settings so that you can see what you've done, this will help when asking for help with pinouts on Discord.
 
 Now follow the post build instructions to make sure you've done everything correct
 
 For tuning I've found that the Voron website is a bit sparse, Bed meshing section is okay (note that Klipper supports Adaptive bed meshing now). For input shaping and belt tension similarity testing I recommend [Klippain Shake&Tune](https://github.com/Frix-x/klippain-shaketune) and general tuning [Ellis print tuning guide](https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html).
+
+[TMC autotune](https://github.com/andrewmcgr/klipper_tmc_autotune) is also recommended to autotune the motor parameters to the specific motors the kit came with. In my case that's `motor: moons-ms17hd6p420I-04` for the X,Y,Z,Z1,Z2 and Z3 motors, and `motor: moons-cse14hra1l410a` for the extrusion motor, but verify which motors you have. My kit also came with a printed spec sheet of the motors.
+
+[Exclude object](https://www.klipper3d.org/Exclude_Object.html) is useful to selectively stop printing certain parts in case of failure and it is integrated into KlipperScreen.
 
 ## Notes from the build
 
