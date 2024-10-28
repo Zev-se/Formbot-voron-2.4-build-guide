@@ -194,7 +194,7 @@ Build sequence:
 | EBB M8P              |         | Make sure to install the 120ohm termination resistor on the M8P as well, the M8P is the start of the CAN bus and the SB2209 is the end, hence why both need to have termination. 
 | Esoterical CAN Guide |         | At this point everything is set up to run from 24V (make sure you have removed the USB 5V jumpers or you will fry the USB controller), including the CAN cable power. Plug in the CAN connector on the toolhead, and the connector on the M8P.
 | Esoterical CAN Guide |         | Make the M8P a USB-CAN bridge. There is no dedicated CAN board so the M8P will act as a bridge between the internal USB communication with the CB1 and the CAN bus with M8P and SB2209 as CAN devices
-| Esoterical CAN Guide |         | Follow the Mainboard flashing instructions. The M8P V1 and V2 have different settings (different chip, different offset, different crystal), make sure to check the correct EBB M8P guide. For example the CAN pins on the M8P V2 are PD0/PD1 ([pinout](https://github.com/bigtreetech/Manta-M8P/blob/master/V2.0/Hardware/BIGTREETECH%20MANTA%20M8P%20V2.0%20PinOut.png) but check the pinout diagram of your board)
+| Esoterical CAN Guide |         | Follow the Mainboard flashing instructions. The M8P V1 and V2 have different settings (different chip, different offset, different crystal), make sure to check the correct EBB M8P guide. For example the CAN pins on the M8P V2 are PD0/PD1  but check the pinout diagram of your board)
 | Esoterical CAN Guide |         | Follow the Toolhead flashing instructions. If you've already flashed katapult in a previous step with the correct CAN settings it should show up on the CAN bus, you can then flash klipper over CAN0. If not follow the instructions meticiulously
 | Voron 2.4R2          | 193     | Run the Z motor wires, but note that this kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
 | Voron 2.4R2          | 194-199 | Older non-CAN, non-umbilical kit: mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forget the extra LED cable.  Newer kit with CAN & umbilical: skip these pages, the umbilical replaces the X and Y cable chains.
@@ -217,7 +217,7 @@ Build sequence:
 | Voron 2.4R2          | 217-219 |
 | Voron 2.4R2          | 220-221 | Skip these pages, mount & hook up the 5" HDMI screen instead.
 | Voron 2.4R2          | 222-230 |
-| Voron 2.4R2          | 231     | Note the wiring of the fans will depend on your controller board, on my Manta M8P I used `FAN0` and `FAN1` at 24V, see <https://github.com/bigtreetech/Manta-M8P/blob/master/V1.0_V1.1/Hardware/BIGTREETECH%20MANTA%20M8P%20V1.1%20PinOut.png>
+| Voron 2.4R2          | 231     | Note the wiring of the fans will depend on your controller board, on my Manta M8P I used `FAN0` and `FAN1` at 24V, check the pinout diagram of your board
 | Voron 2.4R2          | 232     | Use the red VFB tape, not the yellow foam tape.
 | Voron 2.4R2          | 233-234 |
 | Voron 2.4R2          | 235-236 | I found it easier to start with the screws and hammer head T-nuts off the Z belt covers.  I slid the Z belt cover into place, inserted the hammer head T-nut into the extrusion slot, slid it under the hole in the Z belt cover, and screwed in the screw.
