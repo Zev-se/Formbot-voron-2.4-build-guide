@@ -289,12 +289,12 @@ LIGHT BLUE - Break out board (this is replaced with canbus is later kits)
 
 ORANGE - This is Formbots own PCB, in the Voron documentation this is the same as using the WAGO clamps.
 
-- The plastic bracket included in the kit which is for a SBB EBB board isn't needed. Just skip this.
+- ~~The plastic bracket included in the kit which is for a SBB EBB board isn't needed. Just skip this.~~ Needed for canbus SB2209 boards.
 ![](/images/not_needed_bracket.jpeg)
 
 - To mount the SBB EBB break out board i used M3x6 screws from the kit.
 
-- The Bearings on page 17 of the Stealthburner PDF are different from the ones in the kit. Not a problem, just be aware.
+- The Bearings on page 17 of the Stealthburner PDF are different from the ones in the kit. Not a problem, just be aware. These are known to break, the support has kindly replaced these with better ones.
 ![](/images/other_bearings.jpeg)
 
 - There's no z endstop included because of TAP, there's also no 5V PSU included because the BTT PI runs on 24V. Not a problem, just be aware so you don't spend time searching for items that simply aren't there.
