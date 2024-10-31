@@ -237,9 +237,17 @@ It's highly recommended to install the [Kipper Backup](https://github.com/Staubg
 
 Now follow the post build instructions to make sure you've done everything correct
 
-For tuning I've found that the Voron website is a bit sparse, Bed meshing section is okay (note that Klipper supports Adaptive bed meshing now). For input shaping and belt tension similarity testing I recommend [Klippain Shake&Tune](https://github.com/Frix-x/klippain-shaketune) and general tuning [Ellis print tuning guide](https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html).
+For the best print results, tuning is recommended:
+ - [Proper belt tension](https://docs.vorondesign.com/tuning/secondary_printer_tuning.html), AB belts should be ~110Hz at 150mm. Tighten evenly, check if you are not racking the gantry.
+ - [Bed meshing](https://docs.vorondesign.com/tuning/secondary_printer_tuning.html) and [Adaptive bed meshing](https://www.klipper3d.org/Bed_Mesh.html#adaptive-meshes)
+ - [Input shaping w. Klippain Shake&Tune](https://github.com/Frix-x/klippain-shaketune)
+ - [Z-offset squish](https://ellis3dp.com/Print-Tuning-Guide/articles/first_layer_squish.html). Note that Z-offset will change when heatsoaked by quite a bit, up to 0.1mm due to thermal expansion of the frame. More squish is needed on textured PEI plates. Calibrate it in the conditions you will print the most in, you still may have to fine tune prints, hence why printing a skirt is recommended.
+ - [Pressure advance](https://ellis3dp.com/Print-Tuning-Guide/articles/index_pressure_advance.html) and [extrusion multiplier](https://ellis3dp.com/Print-Tuning-Guide/articles/extrusion_multiplier.html)
+ - Other tuning can be found in the excellent [Ellis print tuning guide](https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html)
+   
+ - [TMC autotune](https://github.com/andrewmcgr/klipper_tmc_autotune) is recommended to autotune the motor parameters to the specific motors the kit came with. In my case that's `motor: moons-ms17hd6p420I-04` for the X,Y,Z,Z1,Z2 and Z3 motors, and `motor: moons-cse14hra1l410a` for the extrusion motor, but verify which motors you have. My kit also came with a printed spec sheet of the motors.
 
-[TMC autotune](https://github.com/andrewmcgr/klipper_tmc_autotune) is also recommended to autotune the motor parameters to the specific motors the kit came with. In my case that's `motor: moons-ms17hd6p420I-04` for the X,Y,Z,Z1,Z2 and Z3 motors, and `motor: moons-cse14hra1l410a` for the extrusion motor, but verify which motors you have. My kit also came with a printed spec sheet of the motors.
+Slicer settings can also significantly improve the print quality. [Wall order](https://www.youtube.com/watch?v=__OQmUwVkrw) can make a big difference but has some caveats. [Mouse ear brims](https://www.youtube.com/watch?v=MCcFMDv_4eo) can help with adhesion in parts that like to warp (for example sharp corners with ABS). Adding ironing smooths out the top surface.
 
 [Exclude object](https://www.klipper3d.org/Exclude_Object.html) is useful to selectively stop printing certain parts in case of failure and it is integrated into KlipperScreen.
 
