@@ -235,7 +235,7 @@ Build sequence:
 
 It's highly recommended to install the [Kipper Backup](https://github.com/Staubgeborener/klipper-backup) add-on. It's optional but it will save you soner or later. If you want a guide or just see how it works look at [ModBots youtube clip](https://www.youtube.com/watch?v=47qV9BE2n_Y) about it. Do this before you start changing the settings so that you can see what you've done, this will help when asking for help with pinouts on Discord.
 
-Now follow the post build instructions to make sure you've done everything correct
+Now follow the post build [initial setup guide](https://docs.vorondesign.com/build/startup/) to make sure you've done everything correct.
 
 For the best print results, tuning is recommended:
  - [Proper belt tension](https://docs.vorondesign.com/tuning/secondary_printer_tuning.html), AB belts should be ~110Hz at 150mm. Tighten evenly, check if you are not racking the gantry.
@@ -250,6 +250,8 @@ For the best print results, tuning is recommended:
 Slicer settings can also significantly improve the print quality. [Wall order](https://www.youtube.com/watch?v=__OQmUwVkrw) can make a big difference but has some caveats. [Mouse ear brims](https://www.youtube.com/watch?v=MCcFMDv_4eo) can help with adhesion in parts that like to warp (for example sharp corners with ABS). Adding ironing smooths out the top surface.
 
 [Exclude object](https://www.klipper3d.org/Exclude_Object.html) is useful to selectively stop printing certain parts in case of failure and it is integrated into KlipperScreen.
+
+**When you're done tuning the printer it's recommended to print a backup of all parts needed for the printer to function, thank us later when something breaks and you're stuck in a catch 22.**
 
 ## Notes from the build
 
