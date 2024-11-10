@@ -135,7 +135,8 @@ Build sequence:
 | Stealthburner        | 34      | If you have a CAN kit using EBB SB2209/SB000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Cable_Cover_For_PCB_V1.1.STL>
 | Stealthburner        | 35-39   |
 | Stealthburner        | 40      | Mind the orientation of the hotend. With dragonburner hotends the heat block needs to point forward or it will touch and probably melt the TAP plate (see [this](https://youtu.be/7x-eafpESLc?t=1027) video).
-| Stealthburner        | 41-42   |
+| Stealthburner        | 41      |
+| Stealthburner        | 42      | For Dragon High Flow you won't use the M3x8 SHCS, you'll use the tiny screws from the package labeled "For Dragon Hotend".
 | Stealthburner        | 43      | Some kits will come with multiple PTFE tubes, use the shorter one with ~4 mm OD and ~2 mm ID.
 | Stealthburner        | 44-54   |
 | Stealthburner        | 55      | Discard the half of the fan housing that doesn't have the fan motor and rotor mounted on it.
