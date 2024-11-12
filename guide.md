@@ -156,7 +156,7 @@ Build sequence:
 | Voron TAP            | 35      | Verify Printhead alignment.  If needed, modify rear of printhead with a file or dremel.  Tighten the two upper screws to hold the printhead in place.
 | EBB SB2209           | 12-14   |
 | EBB SB2209           | 15      | Skip this page, the kit does not use a Prox Z endstop/probe.
-| EBB SB2209           | 16      |
+| EBB SB2209           | 16      | Mount the X endstop on the toolhead as shown in the manual. ![](/images/x-endstop-on-toolhead.png)
 | EBB SB2209           | 17      | The kit comes with a pre-crimped probe cable to use for Tap and the Filament Runout Sensor.
 | EBB SB2209           | 18      | Skip this page, the kit does not use BLTouch or Klicky probe.
 | EBB SB2209           | 19      | Final assembly of Stealthburner!
