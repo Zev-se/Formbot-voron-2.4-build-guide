@@ -1,6 +1,7 @@
 ## Introduction
 
-Formbot Voron 2.4 kits are generally a good value (high quality, inexpensive) but they include a bunch of Mods, so their build process differs from official Voron.  This divergence is poorly documented.  This document is our attempt to provide a detailed build guide for Formbot Voron 2.4 kits.
+Formbot Voron 2.4 kits are generally a good value (high quality, inexpensive) and include several commonly desireable Mods, so their build process differs from official Voron.  This divergence is poorly documented by Formbot, and links to this Guide from [their product page](https://www.formbot3d.com/products/voron-24-r2-pro-corexy-3d-printer-kit-with-m8p-cb1-board-and-canbus-wiring-system?VariantsId=10457).   
+This document provides a detailed guide to building the Formbot Voron 2.4 R2 kit.
 
 Please report any incorrect or missing info here on github or in the Voron or Formbot Discord.
 
@@ -28,7 +29,7 @@ Advertised features:
 * Double-sided magnetic flexible PEI print sheet (textured on one side, smooth on the other)
 
 Differences from mainline Voron 2.4:
-* Bakelite spacers under the bed instead of M4 thumb nuts
+* Bakelite bed spacers instead of M4 thumb nuts.
 * CAN toolhead board
 * Umbilical toolhead wiring instead of cable chains
 
@@ -53,6 +54,22 @@ Noteworthy details:
 
 
 </details>
+
+<details>
+  <summary>"Voron 2.4 V2.4 R2 Pro+ Latest Version Best Quality CoreXY 3D Printer Kit" - 350x350x350 - with functional printed parts (_ordered on 2024-11-23 from [AliExpress](https://www.aliexpress.us/item/3256803199034766.html)_)</summary>
+  *Meanwell* power supply - LRS-200-24
+  *Moon* motors
+  *Gates belts* everywhere! pre-cut with ample extra.
+  *Vivedino* linear rails, and bed heater(_110v / 650w - Generic 3950_) with pre-wired inline thermal fuse for runaway prevention.
+  *BigTreeTech* - Manta M8P (v2.0), CB1 (v2.2),  HDMI5 (v1.2), TMC2209 drivers+heat syncs, EBB SB2209 CAN RP2040 (v1.0) + EBB SB0000 CAN (v1.0)
+  ### Mods
+  *Tap R8* w/ OptoTap rev 2.4.1 PCB and Omron sensor.
+  
+  Functional Printed parts - Red and Black. includes the MGN rail jigs, motor gear/pully jig. Quality was good with only 2 cosmetic imperfections.
+  
+</details>
+
+
 
 ## The build process
 
@@ -82,9 +99,9 @@ Build sequence:
 |                      | 30-38   |
 |                      | 39      | If you build a 300x300 Formbot turn one of the motors 90 degrees so that the cable is on the same side as the two screws of the bracket, this will be Z1 later
 |                      | 40-53   |
-|                      | 54      | After carefully installing the flexplate magnet onto the aluminum bed plate, you need to cut away part of the magnet to expose the four bed plate mounting holes.  Note that you do *not* need to cut away the magnet over the two threaded holes near the rear edge of the plate, because these will be accessed from below, not from above.  Locate the bed plate mounting holes by drilling through the magnet from below, using the four existing holes as guides, then cut the magnet using a sharp knife.  ![](/images/flexplate-magnet-holes.jpg)
+|                      | 54      | **Tool Tip**: _A thick rubber squeegee blade such as the type for window tint film and vinyl wrap is useful for reducing bubbles under the magnet and bed heater._ After carefully installing the flexplate magnet onto the aluminum bed plate, you need to cut away part of the magnet to expose the four bed plate mounting holes.  Note that you do *not* need to cut away the magnet over the two threaded holes near the rear edge of the plate, because these will be accessed from below, not from above.  Locate the bed plate mounting holes by drilling through the magnet from below, using the four existing holes as guides, then cut the magnet using a sharp knife.  ![](/images/flexplate-magnet-holes.jpg)
 |                      | 55-57   |
-|                      | 58      | The Formbot kit comes with "Bakelite Isolation Columns", use these instead of M4 nuts as spacers.  ![](/images/bakelite-isolation-columns.png)
+|                      | 58      | The Formbot kit includes "Bakelite Isolation Columns" instead of M4 thumbnuts as spacers.  ![](/images/bakelite-isolation-columns.png)
 |                      | 59-63   | You don't have to install the bed at this point in the guide, it keeps the weight down if you install it when doing the electronics. If you plan on using the Nevermore filter I highly recommend you to build and install that before you install the bed, otherwise you'll have to take the bed back out (and that is a pain when everything is hooked up and the panels are already on). 
 |                      |         | Shift the bed forward by 0.5-1cm if you plan on using a nozzle wiper so the nozzle can reach behind the bed. The TAP plate will also move the nozzle a a few mm forward.
 | Nevermore            |         | [This](https://www.youtube.com/watch?v=or2v4V1QAaw) is a good guide to building the Nevermore V5, as its github is a bit lacking. My kit came with 2 wago connectors to connect the fans to the wiring, but I opted to crimp one of the JST male connectors on the wiring (you have those in the kit with the SB2209 but as the kit already comes with precrimped wires those are spares). I also used a bit of extrusion plastic cover (included in the kit) to tuck the wiring into the side of the extrusion where the bed rests on, that way the cable can never touch the hot bed. The printed parts on the [Formbot github](https://github.com/FORMBOT/Voron-2.4/tree/main/STL/Primary/Nevermore) are slightly different from the ones on the official [Nevermore github page](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V5_Duo/V2). Securing the magnets was more of a pain with the formbot version and still required superglue to keep them seated. There is a [V6](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V6) that might be worth looking into if you have to print the parts anyway.
@@ -103,10 +120,10 @@ Build sequence:
 |                      | 126-127 | Route the A and B belts at this point and leave them loose in front of the X rail.
 |                      | 128     |
 |                      | 129-131 | Skip these pages, TAP replaces the X carriage.
-| Voron TAP            | 1-17    |
+| Voron TAP            | 1-17    | Read the [Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf) **AND** [Voron Tap r8 errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md). 
 | Voron TAP            | 18      | Use the Voron project's printed [MGN9 Assembly Tool](https://github.com/VoronDesign/Voron-Tap/blob/main/STLs/MGN9_Assembly_Tool.stl) rather than the similar part that comes with Formbot's kit.  Formbot's part is too fat and causes some inconvenience when reinstalling the carriage onto the rail later.
 | Voron TAP            | 19-23   |
-| Voron TAP            | 24      | Per the errata (you did read the errata, right) the threaded inserts are installed slightly differently.
+| Voron TAP            | 24      | Per the errata (_you did read the [errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md), right??_) the threaded inserts are installed slightly differently.
 | Voron TAP            | 25-26   |
 | Voron TAP            | 27      | Per the errata, the two M3x6 FHCS that thread in to the Tap\_Front part at an angle may be replaced with magnets, e.g. if your screws are non-magnetic. ![](/images/Tap_Front.png) ![](/images/tap-magnet-option.png)
 | Voron TAP            | 28      |
