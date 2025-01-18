@@ -63,10 +63,12 @@ Noteworthy details:
 *Gates belts* everywhere! pre-cut with ample extra.
 *Vivedino* linear rails, and bed heater(_110v / 650w - Generic 3950_) with pre-wired inline thermal fuse for runaway prevention.
 *BigTreeTech* - Manta M8P (v2.0), CB1 (v2.2),  HDMI5 (v1.2), TMC2209 drivers+heat syncs, EBB SB2209 CAN RP2040 (v1.0) + EBB SB0000 CAN (v1.0)
+*Functional Printed parts* - Red and Black. Includes the MGN rail jigs, motor gear/pully jig. Quality was good with only 2 cosmetic imperfections.
+
 ### Mods
 *Tap R8* w/ OptoTap rev 2.4.1 PCB and Omron sensor.
-  
-Functional Printed parts - Red and Black. includes the MGN rail jigs, motor gear/pully jig. Quality was good with only 2 cosmetic imperfections.
+*Nevermore* v6
+*Air Filter* with injection molded part.
 
 </details>
 
@@ -129,7 +131,7 @@ Build sequence:
 | Voron TAP            | 27      | Per the errata, the two M3x6 FHCS that thread in to the Tap\_Front part at an angle may be replaced with magnets, e.g. if your screws are non-magnetic. ![](/images/Tap_Front.png) ![](/images/tap-magnet-option.png)
 | Voron TAP            | 28      |
 | Voron TAP            | 29      | Per the errata we use M3x6, M3x12, and M3x16 SHCS to attach the rail.
-| Voron TAP            | 30      | The 2024-06-23 kit uses a "Trident style" X-axis microswitch.
+| Voron TAP            | 30      | The 2024-06-23 and 2024-11-23 kit uses a "Trident style" X-axis microswitch. The switch and pigtail is labeled "TO CAN-Endstop" and is attached using M2x10 self tapping screws included with the kit.
 | Voron TAP            | 31      | Attach the belts to the Center and attach the Center to the MGN12 linear rail of the X axis.  This video is helpful: <https://www.youtube.com/watch?v=mJNCn72lQpU>
 | Voron 2.4R2          | 132-138 | Route the belts.
 | Voron 2.4R2          | 139-141 | Skip these, use the Tap instead.
