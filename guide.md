@@ -65,10 +65,13 @@ Noteworthy details:
 *BigTreeTech* - Manta M8P (v2.0), CB1 (v2.2),  HDMI5 (v1.2), TMC2209 drivers+heat syncs, EBB SB2209 CAN RP2040 (v1.0) + EBB SB0000 CAN (v1.0)
 *Functional Printed parts* - Red and Black. Includes the MGN rail jigs, motor gear/pully jig. Quality was good with only 2 cosmetic imperfections.
 
-### Mods
+### Mods included with kit
 *Tap R8* w/ OptoTap rev 2.4.1 PCB and Omron sensor.
+*Umbilical* 
+*Clockwork2* 
 *Nevermore* v6
 *Air Filter* with injection molded part.
+
 
 </details>
 
