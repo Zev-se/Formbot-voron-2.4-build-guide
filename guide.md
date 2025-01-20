@@ -71,11 +71,11 @@ Noteworthy details:
 * **Functional Printed parts** - Red and Black. Includes the MGN rail jigs, motor gear/pully jig. Quality was good with only 2 cosmetic imperfections.
 
 ### Mods included with kit
-*Tap R8* w/ OptoTap rev 2.4.1 PCB and Omron sensor.
-*Umbilical* 
-*Clockwork2* 
-*Nevermore* v6
-*Air Filter* with injection molded part.  
+* **Tap R8** w/ OptoTap rev 2.4.1 PCB and Omron sensor.
+* **Umbilical**
+* **Clockwork2**
+* **Nevermore** v6
+* **Air Filter** w/ injection molded part.  
 </details>
 
 
