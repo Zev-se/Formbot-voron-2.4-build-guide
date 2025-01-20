@@ -52,27 +52,30 @@ Noteworthy details:
 ![image](https://github.com/user-attachments/assets/393d47f7-c07c-46e9-b278-08e8bbacaffc)
 ![image](https://github.com/user-attachments/assets/6053423b-8034-40e9-8971-af1b120be359)
 
-
 </details>
 
 <details>
   <summary>"Voron 2.4 V2.4 R2 Pro+ Latest Version Best Quality CoreXY 3D Printer Kit" - 350mm w/ functional printed parts (Ordered 2024-11-23 from AliExpress, shipped from US)</summary>
-[AliExpress US Link for official Formbot Store](https://www.aliexpress.us/item/3256803199034766.html)
-*Meanwell* power supply - LRS-200-24
-*Moon* motors
-*Gates belts* everywhere! pre-cut with ample extra.
-*Vivedino* linear rails, and bed heater(_110v / 650w - Generic 3950_) with pre-wired inline thermal fuse for runaway prevention.
-*BigTreeTech* - Manta M8P (v2.0), CB1 (v2.2),  HDMI5 (v1.2), TMC2209 drivers+heat syncs, EBB SB2209 CAN RP2040 (v1.0) + EBB SB0000 CAN (v1.0)
-*Functional Printed parts* - Red and Black. Includes the MGN rail jigs, motor gear/pully jig. Quality was good with only 2 cosmetic imperfections.
+
+
+<a href=https://www.aliexpress.us/item/3256803199034766.html>AliExpress US Link for official Formbot Store</a>  
+* **Meanwell** power supply - LRS-200-24  
+* *Moon* motors  
+* *Gates belts* everywhere! pre-cut with ample extra.
+* *Vivedino* linear rails, and bed heater(_110v / 650w - Generic 3950_) with pre-wired inline thermal fuse for runaway prevention.
+* **BigTreeTech:**
+  * Manta M8P (v2.0), CB1 (v2.2)
+  * HDMI5 (v1.2)
+  * TMC2209 drivers+heat syncs
+  * EBB SB2209 CAN RP2040 (v1.0) + EBB SB0000 CAN (v1.0)
+* **Functional Printed parts** - Red and Black. Includes the MGN rail jigs, motor gear/pully jig. Quality was good with only 2 cosmetic imperfections.
 
 ### Mods included with kit
 *Tap R8* w/ OptoTap rev 2.4.1 PCB and Omron sensor.
 *Umbilical* 
 *Clockwork2* 
 *Nevermore* v6
-*Air Filter* with injection molded part.
-
-
+*Air Filter* with injection molded part.  
 </details>
 
 
