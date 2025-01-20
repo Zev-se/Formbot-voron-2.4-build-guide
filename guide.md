@@ -153,11 +153,11 @@ Build sequence:
 | Stealthburner        | 21      | The Drive Assembly may come as a single piece, with no assembly needed.  ![](/images/single-part-Drive-Assembly.jpg)
 | Stealthburner        | 22-29   |
 | Stealthburner        | 30      | Write down or take a picture of which extrusion motor you have with the kit. Once it's in the toolhead the label will be hard to read and you'll need it later in the config.
-| Stealthburner        | 31-32   | For kits with umbilical, skip this part and these pages.  Later we'll attach the BTT "Cable Bridge" that replaces the stock Voron "Chain Anchor".
+| Stealthburner        | 31-32   | For kits with umbilical, skip this part and these pages.  Later we'll attach the [BigTreeTech "Cable Bridge"](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/CW2%20Cable%20Bridge.STL), replacing the stock Voron 2.4 "Chain Anchor". <br> The 2024-11-23 printed parts from Formbot includes the BTT Cable Bridge part.
 | Stealthburner        | 33      |
-| Stealthburner        | 34      | If you have a CAN kit using EBB SB2209/SB000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Cable_Cover_For_PCB_V1.1.STL>
+| Stealthburner        | 34      | If your kit uses the BTT CAN EBB SB2209 CAN SB000, use the [BigTreeTech part(STL)](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Cable_Cover_For_PCB_V1.1.STL) . <br> The 2024-11-23 printed parts from Formbot includes this part.
 | Stealthburner        | 35-39   |
-| Stealthburner        | 40      | Mind the orientation of the hotend. With dragonburner hotends the heat block needs to point forward or it will touch and probably melt the TAP plate (see [this](https://youtu.be/7x-eafpESLc?t=1027) video).
+| Stealthburner        | 40      | *Know your hotend!* <br> The kit comes standard with a v6 hotend ( [toolhead STLs here](https://github.com/VoronDesign/Voron-Stealthburner/tree/main/STLs/Stealthburner/Printheads/revo_six_and_v6) ), but can be upgraded to a Phaetus Dragon Burner [HF](https://www.phaetus.com/products/dragon-hotend-hf?variant=45156813635861) or [UHF](). <br> The Phaetus Dragon Burner HF ( [toolhead STLs here](https://github.com/VoronDesign/Voron-Stealthburner/tree/main/STLs/Stealthburner/Printheads/phaetus_dragon) ) comes with a removable collet extension that needs to be removed before you can install the hotend to the toolhead. <br> The heater block should be oriented forward to prevent contact with the toolhead housing. <br> See [this video](https://youtu.be/7x-eafpESLc?t=1027) for reference.
 | Stealthburner        | 41      |
 | Stealthburner        | 42      | For Dragon High Flow you won't use the M3x8 SHCS, you'll use the tiny screws from the package labeled "For Dragon Hotend".
 | Stealthburner        | 43      | Some kits will come with multiple PTFE tubes, use the shorter one with ~4 mm OD and ~2 mm ID.
