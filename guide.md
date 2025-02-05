@@ -72,9 +72,12 @@ Noteworthy details:
 
 ### Mods included with kit
 * **Tap R8** w/ OptoTap rev 2.4.1 PCB and Omron sensor.
-* **Umbilical**
+* **Umbilical CAN bus**
 * **Clockwork2**
-* **Nevermore** v6
+* **[hartk1213's](https://github.com/hartk1213) work** :
+  * PG7 Umbilical gland. Looks like [this remixed one](https://www.printables.com/model/312008-voron-24-a-drive-pg7-umbilical-mount), [Formbot printed parts STL is here](https://github.com/FORMBOT/Voron-2.4/blob/main/STL/Accent/PG7-Umbilical%20Motor%20Mount.stl).
+  * [Y-endstop relocation to the top A-motor mount](https://mods.vorondesign.com/details/Q1xuJ7ae98MoMeAumXdAw).
+* **Nevermore** v6 - The printed parts are considered an accessory and are NOT included if you order functional parts only.
 * **Air Filter** w/ injection molded part.  
 </details>
 
