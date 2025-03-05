@@ -233,12 +233,13 @@ Build sequence:
 | Esoterical CAN Guide |         | Follow the Mainboard flashing instructions. The M8P V1 and V2 have different settings (different chip, different offset, different crystal), make sure to check the correct EBB M8P guide. For example the CAN pins on the M8P V2 are PD0/PD1  but check the pinout diagram of your board)
 | Esoterical CAN Guide |         | Follow the Toolhead flashing instructions. If you've already flashed katapult in a previous step with the correct CAN settings it should show up on the CAN bus, you can then flash klipper over CAN0. If not follow the instructions meticiulously
 | Voron 2.4R2          | 221     | Run the Z motor wires, but note that this kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
-| Voron 2.4R2          | 222-199 | Older non-CAN, non-umbilical kit: mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forget the extra LED cable.  Newer kit with CAN & umbilical: skip these pages, the umbilical replaces the X and Y cable chains. Make sure the cables have enough slack in the the chain and do not use zip ties or anything that would impede their movement in the chain, any stress on the wires will lead to wire fatigue and ultimately breakage.
-| Voron 2.4R2          | 200     | The B-motor cable is routed in the 2020 grove under the gantry and held in place with a plastic cover instead of zipties.  Trim the plastic cover to length.  ![](/images/A_B_motor_cable.jpeg)
-| Voron 2.4R2          | 201-202 | Mount the two ends without the chain attached.  Adjust the number of links in the Z cable chain to get it to the correct length.  Open the gates/covers in the chain links before mounting. Temporarily remove the PG7 bracket from the B motor mount to be able to attach the Z chain.
-| Voron 2.4R2          | 203     |
-| Voron 2.4R2          | 204     | Skip this page if you have a newer kit with CAN/umbilical, it has no cables routed along the gantry.
-| Voron 2.4R2          | 205-209 | Skip these pages, follow the M8P instructions on the Voron Designs website instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>.  Do the Electrical Wiring, Software Installation sections.
+| Voron 2.4R2          | 222-223 | Older non-CAN, non-umbilical kit: mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forget the extra LED cable.  Newer kit with CAN & umbilical: skip these pages, the umbilical replaces the X and Y cable chains. Make sure the cables have enough slack in the the chain and do not use zip ties or anything that would impede their movement in the chain, any stress on the wires will lead to wire fatigue and ultimately breakage.
+| Voron 2.4R2          | 224-226 | This wiring was handled by the Stealthburner and SB2209 guides. |
+| Voron 2.4R2          | 227     | Skip this page if you have a newer kit with CAN/umbilical, it has no cables routed along the gantry.
+| Voron 2.4R2          | 228-229 |
+| Voron 2.4R2          | 230-233 | Mount the two ends without the chain attached.  Adjust the number of links in the Z cable chain to get it to the correct length.  Open the gates/covers in the chain links before mounting. Temporarily remove the PG7 bracket from the B motor mount to be able to attach the Z chain.
+| Voron 2.4R2          | 234     | The B-motor cable is routed in the 2020 grove under the gantry and held in place with a plastic cover instead of zipties.  Trim the plastic cover to length.  ![](/images/A_B_motor_cable.jpeg)
+| Voron 2.4R2          | 235-239 | Skip these pages, follow the M8P instructions on the Voron Designs website instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>.  Do the Electrical Wiring, Software Installation sections.
 | Software config      |         | Follow the Software Configuration section loosely. Additional things need to be set up such as the SB2209 and can uuids instead of serial
 | Software config      |         | Follow the Esoterical CAN Guide final steps to configure both [mcu] with canbus uuids so Klipper will recognize them. Note that when Klipper ingests the MCU they won't be visible through the can_query command to list them anymore.
 | Software config      |         | Configure the SB2209 Toolhead, starting from the sample cfg provided [here](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/sample-bigtreetech-ebb-sb-rp2040-canbus-v1.0.cfg). Make use of the pinout diagram to verify that the GPIO's used are correct with how you plugged things in. If you have a PT1000 temperature sensor plugged in into the 4 pin 31865 socket, remove the sensor_pin and sensor_type in extruder and uncomment the sensor_type: MAX31865 block. The temperature is accessed through communication with the MAX31865 chip
@@ -246,25 +247,24 @@ Build sequence:
 | Software config      |         | Configure TAP, follow the post-install instructions on the [github page](https://github.com/VoronDesign/Voron-Tap). You will need to pull up the pin with `^`, with the provided wiring TAP is connected to gpio22 so it becomes `pin: ^EBBCan:gpio22` (verify with your pinout if it's the same for you). Skip PROBE_CALIBRATE for now, do that after homing and quad gantry levelling when the Initial Startup section on the Voron website calls for it.
 | Software config      |         | For the stealthburner LEDs to work you'll need to add [this](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg) config file to Klipper.
 |                      |         | Continue on the Voron website with the Initial startup, Slicer Setup, and First Print sections. First print wooo!
-| Voron 2.4R2          | 210     |
-| Voron 2.4R2          | 211     | Skip this page, the Formbot kit uses a different display with different mounting parts.
-| Voron 2.4R2          | 212-213 |
-| Voron 2.4R2          | 214-216 | Skip this page, the Formbot kit uses a different display with different mounting parts.
-| Voron 2.4R2          | 217-219 |
-| Voron 2.4R2          | 220-221 | Skip these pages, mount & hook up the 5" HDMI screen instead.
-| Voron 2.4R2          | 222-230 |
-| Voron 2.4R2          | 231     | Note the wiring of the fans will depend on your controller board, on my Manta M8P I used `FAN0` and `FAN1` at 24V, check the pinout diagram of your board
-| Voron 2.4R2          | 232     | Use the red VFB tape, not the yellow foam tape.
-| Voron 2.4R2          | 233-234 |
-| Voron 2.4R2          | 235-236 | I found it easier to start with the screws and hammer head T-nuts off the Z belt covers.  I slid the Z belt cover into place, inserted the hammer head T-nut into the extrusion slot, slid it under the hole in the Z belt cover, and screwed in the screw.
-| Voron 2.4R2          | 237-243 | Hammer head T-nuts are not my favorite, super fiddly. What seemed to work for me was to put the hammernuts on the screws a couple of turns, then hold the part in place with the hammernuts inserted in the channel, then *loosen* the screw so the hammernut completely backs out against the back of the extrusion channel, and then tighten. Loosening it first ensures it's completely in the extrusion channel and can turn while tightening. Once I did it like that installing the panels were a breeze.
-| Voron 2.4R2          | 244     | Do yourself a favor and leave the top panel off until after you installed the exhaust, it makes installing the exhaust much much easier.
-| Voron 2.4R2          | 245-246 |
-| Voron 2.4R2          | 247     | The VHB tape that came with my kit is not strong enough to hold the doors own weight. Having the doors open while the printer is on its back (to access the electronics) the tape will loosen and the doors will fall off. If the doors are open for a long period of time they don't align anymore because the tape isn't strong enough to prevent sagging. Probably a good idea to source your own VHB tape from a more reputable brand.
-| Voron 2.4R2          | 248-249 | Attach the hinges to the doors but don't attach the handles.  Test fit the doors and sand the edges to fit, then attach the handles.
-| Voron 2.4R2          | 250-251 |
-| Voron 2.4R2          | 252     | The Formbot kit supplies the filter access cover, but feel free to ignore that part and print your own if you want it in the accent color.
-| Voron 2.4R2          | 253-259 |
+| Voron 2.4R2          | 240     | Skip this page, the Formbot kit uses a different display with different mounting parts.
+| Voron 2.4R2          | 241-243 |
+| Voron 2.4R2          | 244-246 | Skip this page, the Formbot kit uses a different display with different mounting parts.
+| Voron 2.4R2          | 277-249 |
+| Voron 2.4R2          | 250-251 | Skip these pages, mount & hook up the 5" HDMI screen instead.
+| Voron 2.4R2          | 252-260 |
+| Voron 2.4R2          | 261     | Note the wiring of the fans will depend on your controller board, on my Manta M8P I used `FAN0` and `FAN1` at 24V, check the pinout diagram of your board
+| Voron 2.4R2          | 262     | Use the red VFB tape, not the yellow foam tape.
+| Voron 2.4R2          | 263-264 |
+| Voron 2.4R2          | 265-266 | I found it easier to start with the screws and hammer head T-nuts off the Z belt covers.  I slid the Z belt cover into place, inserted the hammer head T-nut into the extrusion slot, slid it under the hole in the Z belt cover, and screwed in the screw.
+| Voron 2.4R2          | 267-273 | Hammer head T-nuts are not my favorite, super fiddly. What seemed to work for me was to put the hammernuts on the screws a couple of turns, then hold the part in place with the hammernuts inserted in the channel, then *loosen* the screw so the hammernut completely backs out against the back of the extrusion channel, and then tighten. Loosening it first ensures it's completely in the extrusion channel and can turn while tightening. Once I did it like that installing the panels were a breeze.
+| Voron 2.4R2          | 274     | Do yourself a favor and leave the top panel off until after you installed the exhaust, it makes installing the exhaust much much easier.
+| Voron 2.4R2          | 275-266 |
+| Voron 2.4R2          | 267     | The VHB tape that came with my kit is not strong enough to hold the doors own weight. Having the doors open while the printer is on its back (to access the electronics) the tape will loosen and the doors will fall off. If the doors are open for a long period of time they don't align anymore because the tape isn't strong enough to prevent sagging. Probably a good idea to source your own VHB tape from a more reputable brand.
+| Voron 2.4R2          | 268-279 | Attach the hinges to the doors but don't attach the handles.  Test fit the doors and sand the edges to fit, then attach the handles.
+| Voron 2.4R2          | 280-281 |
+| Voron 2.4R2          | 282     | The Formbot kit supplies the filter access cover, but feel free to ignore that part and print your own if you want it in the accent color.
+| Voron 2.4R2          | 283-289 |
 | BTT Screen           |         | Install KlipperScreen through [KIAUH](https://github.com/dw-0/kiauh) and plug in the HDMI into HDMI0 and the USB into one of the USBs of the mainboard. It should work out of the box. I chose [this](https://www.printables.com/model/612525-btt-hdmi5-mount-conector-hide) mount which also hides the connectors.
 | LED light            |         | The kit comes with a 24V LED light. It can be mounted anywhere but make sure the wires are long enough to reach the HE1 terminal on the mainboard. I used a bit of extrusion cable cover to tuck the cable away neatly. [This](https://www.printables.com/model/691490-formbot-kit-led-bar-holder) mount allows you to angle the LED bar 45° (make sure to route the wires through the holder before routing the wires to the main board)
 | Nozzle brush         |         | The kit also comes with a brass? nozzle brush. It can be used to clean the nozzle manually or you can a [Nozzle scrubber with bucket](https://www.printables.com/model/462459-nozzle-scrubber-with-a-large-bucket-for-voron-24) and a macro to do it automatically before each print. Make sure the brush is brass and not brass steel, the latter will damage the nozzle. I opted to buy a silicon brush (like the one for [Bambu A1](https://www.aliexpress.com/i/1005007468595906.html)) and use [this](https://www.printables.com/model/786705-voron-24-nozzle-brush-using-bambu-labs-a1-silicone) model instead.
