@@ -129,6 +129,8 @@ Build sequence:
 |                      | 126-127 | Route the A and B belts at this point and leave them loose in front of the X rail.
 |                      | 128     |
 |                      | 129-131 | Skip these pages, TAP replaces the X carriage.
+| Voron TAP            | CNC TAP | If you ordered the CNC TAP option, follow the next row's instruction and then skip to page 31. |
+|                      | CNC TAP | <ol><li>Remove the 4 screws holding the top frame to the shuttle.</li><li>Carefully remove the frame from shuttle with care to keep the shuttle on the rail.<ul><li>The magnet at the top of the frame is attracted to the top of the rail and will offer resistance and feel like there are still screws in place.</li></ul></li><li>Use the plastic pseudo-rail to remove the shuttle and store it to the side in a safe place.<ul><li>Pages 18 & 32 show the tool's usage.</li></ul></li><li>Attach the end stop switch on the lower right wing of the carrige plate.</li><li>Remove the 4 nuts on the back of the carriage and use those bolts to attach the carriage to your X shuttle.</li><li>Attach the X/Y belts to the carriage similar to what is shown on page 31.</li></ol><br>![cnc-tap-carriage](/images/cnc-tap-carriage.jpg) |
 | Voron TAP            | 1-17    | Read the [Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf) **AND** [Voron Tap r8 errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md). 
 | Voron TAP            | 18      | Use the Voron project's printed [MGN9 Assembly Tool](https://github.com/VoronDesign/Voron-Tap/blob/main/STLs/MGN9_Assembly_Tool.stl) rather than the similar part that comes with Formbot's kit.  Formbot's part is too fat and causes some inconvenience when reinstalling the carriage onto the rail later.
 | Voron TAP            | 19-23   |
@@ -138,13 +140,14 @@ Build sequence:
 | Voron TAP            | 28      |
 | Voron TAP            | 29      | Per the errata we use M3x6, M3x12, and M3x16 SHCS to attach the rail.
 | Voron TAP            | 30      | The 2024-06-23 and 2024-11-23 kit uses a "Trident style" X-axis microswitch. The switch and pigtail is labeled "TO CAN-Endstop" and is attached using M2x10 self tapping screws included with the kit.
-| Voron TAP            | 31      | Attach the belts to the Center and attach the Center to the MGN12 linear rail of the X axis.  This video is helpful: <https://www.youtube.com/watch?v=mJNCn72lQpU>
+| Voron TAP            | 31      | Attach the belts to the Center and attach the Center to the MGN12 linear rail of the X axis.  This video is helpful: <https://www.youtube.com/watch?v=mJNCn72lQpU> |
 | Voron 2.4R2          | 132-138 | Route the belts.
 | Voron 2.4R2          | 139-141 | Skip these, use the Tap instead.
 | Voron 2.4R2          | 142     | Check your work.
-| Voron TAP            | 32      | If there is not sufficient clearance to install the MGN9H carriage onto its rail from the top, temporarily remove the lowest rail screw (the carriage stop, with the heat-set insert spacer) and install the carriage from the bottom, then reinstall the carriage stop screw. ![](/images/tap-carriage-install-0.jpg) ![](/images/tap-carriage-install-1.jpg)
+| Voron TAP            | 32      | If there is not sufficient clearance to install the MGN9H carriage onto its rail from the top, temporarily remove the lowest rail screw (the carriage stop, with the heat-set insert spacer) and install the carriage from the bottom, then reinstall the carriage stop screw.<br>![](/images/tap-carriage-install-0.jpg)<br>![](/images/tap-carriage-install-1.jpg)|
+|                      | CNC TAP | In leiu of the protruding bolt as the stop. I used magnets on the top and bottom of the rail to keep the shuttle from comming off by accident. |
 | Voron TAP            | 33      | I had to avoid tucking the belts through the slots in the Front part, it interfered with the motion of the Tap.
-| Voron TAP            | 34      |
+|                      | CNC TAP | <ol><li>Install the TAP board on the stand-offs on the top rear of the plate.</li><li>Reattach the plate to the TAP shuttle.</li><li>Remove whatever you used to keep the shuttle from falling off the rail.</li></ol><br>![cnc-tap-complete](/images/cnc-tap-complete.jpg) |
 | Stealthburner        | 1-10    |
 | Stealthburner        | 11      | If you have a CAN kit using EBB SB2209/SB0000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Main_Body_EBB.stl>
 | Stealthburner        | 12      |
@@ -182,6 +185,7 @@ Build sequence:
 | Stealthburner        | 66      | The Printhead assembly mates flush against the Tap assembly, and is initially held by the two M3x16 SHCS screws from Tap page 25 and resting on the two M3x6 BHCS from Tap page 27.
 | Stealthburner        | 67      | Don't do this page, we did it as part of the EBB manual.
 | Stealthburner        | 68-69   | Don't do these pages, there's an ADXL345 on the SB2209 (RP2040).
+| Voron TAP            | 34      |
 | Voron TAP            | 35      | Verify Printhead alignment.  If needed, modify rear of printhead with a file or dremel.  Tighten the two upper screws to hold the printhead in place.
 | EBB SB2209           | 12-14   |
 | EBB SB2209           | 15      | Skip this page, the kit does not use a Prox Z endstop/probe.
