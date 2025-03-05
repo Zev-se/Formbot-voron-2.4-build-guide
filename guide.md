@@ -202,38 +202,37 @@ Build sequence:
 | Voron 2.4R2          | 143-144 | Skip these pages, the kit doesn't use a Z probe (uses Tap instead).
 | Voron 2.4R2          | 145     | Skip this pages, the kit doesn't use a hall-effect X endstop.
 | Voron 2.4R2          | 146-149 |
-| Voron 2.4R2          | 179-180 | Skip these pages, the kit does not use a Raspberry Pi or a 5V power supply.
-| Voron 2.4R2          | 181     | Put the mounts on the 24V power supply.
-| Voron 2.4R2          | 182-183 | Put the mounts on the Manta M8P using the parts from the bigtreetech/Manta-M8P repo, using 4x M3-6 BHCS.
-| Voron 2.4R2          | 184     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
-| Voron 2.4R2          | 185     |
-| Voron 2.4R2          | 186-189 | Skip these pages, the kit uses Tap instead of a Z endstop.
-| Voron 2.4R2          | 190-192 | Different versions of this kit handle the X & Y endstops (limit switches) in different ways.  <ul> <li>Newer versions of the kit that use the SB2209 toolhead board place the X endstop on the toolhead (we did this up above) and place the Y endstop on the right-rear coreXY motor (e.g. using this part: <https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with->).</li> <li>Older versions of the kit that don't use the SB2209 mount the limit switches on a custom PCB, but otherwise follow the mainline Voron instructions.  This means placing both endstops on the right-hand side of the gantry: ![](/images/voron_limit_switch.png)</li> </ul>
-| Voron 2.4R2          | 193     | Skip these pages, the kit does not include Wago clamps.
-| Voron 2.4R2          | 194-196 |
-| Voron 2.4R2          | 197     | Note: For the rest of the assembly process, refer to the Voron 2.4r2 manual and the Formbot wiring guide for placement of the electronics. Also, if you're unsure as to what is what, please look at the image in the notes from the build below.
-| Voron 2.4R2          | 197     | Install the 24V power supply and its mounts on the DIN rail.  For 300mm, mount as shown in the Formbot Wiring Guide.  For 250mm, mount as shown in the Voron 2.4r2 manual. Make sure you add the extra mounting bracket.
-| Voron 2.4R2          | 198     | Install the Manta 8P controller and its mounts on the DIN rail.
-| Voron 2.4R2          | 199     |
-| Voron 2.4R2          | 200     | Skip this page, no 5V supply with this kit.
-| Voron 2.4R2          | 201     |
-| Voron 2.4R2          | 202-206 | Skip these pages, the Formbot kit uses a Manta M8P control board instead.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>. My kit came with BTT TMC2209 V1.3 stepper motor drivers, verify yours are too, otherwise the jumpers in the linked document might need to be set differently.
+| Voron 2.4R2          | 150-152 | Skip these pages, the kit does not use a Raspberry Pi or a 5V power supply.
+| Voron 2.4R2          | 153     | Put the mounts on the 24V power supply.
+| Voron 2.4R2          | 154-155 | Put the mounts on the Manta M8P using the parts from the bigtreetech/Manta-M8P repo, using 4x M3-6 BHCS.
+| Voron 2.4R2          | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
+| Voron 2.4R2          | 157     |
+| Voron 2.4R2          | 158-161 | Skip these pages, the kit uses Tap instead of a Z endstop.
+| Voron 2.4R2          | 162-164 | Different versions of this kit handle the X & Y endstops (limit switches) in different ways.  <ul> <li>Newer versions of the kit that use the SB2209 toolhead board place the X endstop on the toolhead (we did this up above) and place the Y endstop on the right-rear coreXY motor (e.g. using this part: <https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with->).</li> <li>Older versions of the kit that don't use the SB2209 mount the limit switches on a custom PCB, but otherwise follow the mainline Voron instructions.  This means placing both endstops on the right-hand side of the gantry: ![](/images/voron_limit_switch.png)</li> </ul>
+| Voron 2.4R2          | 165-167 |
+| Voron 2.4R2          | 168     | Note: For the rest of the assembly process, refer to the Voron 2.4r2 manual and the Formbot wiring guide for placement of the electronics. Also, if you're unsure as to what is what, please look at the image in the notes from the build below.
+| Voron 2.4R2          | 169     | Install the 24V power supply and its mounts on the DIN rail.  For 300mm, mount as shown in the Formbot Wiring Guide.  For 250mm, mount as shown in the Voron 2.4r2 manual. Make sure you add the extra mounting bracket.
+| Voron 2.4R2          | 170     | Install the Manta 8P controller and its mounts on the DIN rail.
+| Voron 2.4R2          | 171     |
+| Voron 2.4R2          | 172     | Skip this page, no 5V supply with this kit.
+| Voron 2.4R2          | 173     |
+| Voron 2.4R2          | 174-179 | Skip these pages, the Formbot kit uses a Manta M8P control board instead.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>. My kit came with BTT TMC2209 V1.3 stepper motor drivers, verify yours are too, otherwise the jumpers in the linked document might need to be set differently.
 | Formbot Wiring guide |         | For older (non-CAN) kits: Mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this guide with what is what. 
 | Formbot Wiring guide |         | The CAN cable has 2 leads for 24V power, you need to crimp these with ring or spade terminals and connect them to the PSU. Do not connect them as is to the PSU, they will not be secure and can lead to short circuits. (I used a bit of wire to extend them with wago connectors so I didn't have to unravel the CAN communication wires)
 | Formbot Wiring guide |         | If you can't find the 3 IN 6 OUT terminals in your kit, check the bag with the exhaust parts, in my case it was tucked away in there
 | Formbot Wiring guide |         | If your frame is anodized the coating will not be conductive, when attaching protective earth to the frame, scrape away some coating so the T-nut makes a solid contact. You can test for continuity on any frame screw on all the extrusions to ensure the frame is properly earthed.
-| Voron 2.4R2          | 207-211 | Wire up the 24V PSU.  Test it before connecting 24V to anything.
-| Voron 2.4R2          | 212-213 |
-| Voron 2.4R2          | 214-217 | Skip these pages, the kit does not include Wago clamps.
-| Voron 2.4R2          | 218-219 | Skip these pages, the kit does not include a 5V PSU or a Raspberry Pi.
-| Voron 2.4R2          | 220     | This kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
+| Voron 2.4R2          | 180-183 | Wire up the 24V PSU.  Test it before connecting 24V to anything.
+| Voron 2.4R2          | 184-185 |
+| Voron 2.4R2          | 186-189 | Skip these pages, the kit does not include Wago clamps.
+| Voron 2.4R2          | 190-191 | Skip these pages, the kit does not include a 5V PSU or a Raspberry Pi.
+| Voron 2.4R2          | 192     | This kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
 | EBB M8P              |         | Make sure to install the 120ohm termination resistor on the M8P as well, the M8P is the start of the CAN bus and the SB2209 is the end, hence why both need to have termination. 
 | Esoterical CAN Guide |         | At this point everything is set up to run from 24V (make sure you have removed the USB 5V jumpers or you will fry the USB controller), including the CAN cable power. Plug in the CAN connector on the toolhead, and the connector on the M8P.
 | Esoterical CAN Guide |         | Make the M8P a USB-CAN bridge. There is no dedicated CAN board so the M8P will act as a bridge between the internal USB communication with the CB1 and the CAN bus with M8P and SB2209 as CAN devices
 | Esoterical CAN Guide |         | Follow the Mainboard flashing instructions. The M8P V1 and V2 have different settings (different chip, different offset, different crystal), make sure to check the correct EBB M8P guide. For example the CAN pins on the M8P V2 are PD0/PD1  but check the pinout diagram of your board)
 | Esoterical CAN Guide |         | Follow the Toolhead flashing instructions. If you've already flashed katapult in a previous step with the correct CAN settings it should show up on the CAN bus, you can then flash klipper over CAN0. If not follow the instructions meticiulously
-| Voron 2.4R2          | 221     | Run the Z motor wires, but note that this kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
-| Voron 2.4R2          | 222-199 | Older non-CAN, non-umbilical kit: mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forget the extra LED cable.  Newer kit with CAN & umbilical: skip these pages, the umbilical replaces the X and Y cable chains. Make sure the cables have enough slack in the the chain and do not use zip ties or anything that would impede their movement in the chain, any stress on the wires will lead to wire fatigue and ultimately breakage.
+| Voron 2.4R2          | 193     | Run the Z motor wires, but note that this kit does not include an Octopus control board.  Follow the instructions here instead: <https://docs.vorondesign.com/build/electrical/v2_m8p_wiring.html>
+| Voron 2.4R2          | 194-199 | Older non-CAN, non-umbilical kit: mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forget the extra LED cable.  Newer kit with CAN & umbilical: skip these pages, the umbilical replaces the X and Y cable chains. Make sure the cables have enough slack in the the chain and do not use zip ties or anything that would impede their movement in the chain, any stress on the wires will lead to wire fatigue and ultimately breakage.
 | Voron 2.4R2          | 200     | The B-motor cable is routed in the 2020 grove under the gantry and held in place with a plastic cover instead of zipties.  Trim the plastic cover to length.  ![](/images/A_B_motor_cable.jpeg)
 | Voron 2.4R2          | 201-202 | Mount the two ends without the chain attached.  Adjust the number of links in the Z cable chain to get it to the correct length.  Open the gates/covers in the chain links before mounting. Temporarily remove the PG7 bracket from the B motor mount to be able to attach the Z chain.
 | Voron 2.4R2          | 203     |
