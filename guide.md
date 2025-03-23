@@ -129,7 +129,7 @@ Build sequence:
 
 | Manual               | Pages   | Comment
 |----------------------|---------|---  
-| Voron 2.4R2          | 64      | The Formbot printed parts use [hartk1213's Y-stop relocation to A-drive mount](https://mods.vorondesign.com/details/Q1xuJ7ae98MoMeAumXdAw) model. The long Y-endstop cable should be routed through the hole before you assemble the drag chain. The endstop is screwed in with a single M2x10 Self-Tapping screw. <br> <br> Optionally, you can use the standard VORON Design `a_drive_frame_upper` part here instead if want to use something like @decidophobia's [Voron V2.4 PG7 Umbilical & Y Endstop Relocation with cable cutout](https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with-) part to mount the Y-endstop and anchor the PG7 gland.
+| Voron 2.4R2          | 64      | The Formbot printed parts use [hartk1213's Y-stop relocation to A-drive mount](https://mods.vorondesign.com/details/Q1xuJ7ae98MoMeAumXdAw) model. The long Y-endstop cable should be routed through the cable path at this step to avoid tedious re-work. The endstop is screwed in with a single M2x10 Self-Tapping screw. This cable will route through the drag chain later so bundle the wires for now. <br> <br> Optionally, you can use the standard VORON Design `a_drive_frame_upper` part here instead if want to use something like @decidophobia's [Voron V2.4 PG7 Umbilical & Y Endstop Relocation with cable cutout](https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with-) part to mount the Y-endstop and anchor the PG7 gland.
 |                      | 65-80   |
 
 > [!NOTE]
