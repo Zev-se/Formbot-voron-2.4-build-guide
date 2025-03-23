@@ -143,14 +143,34 @@ Build sequence:
 |                      | 96      | Keep the following in mind when installing the XY mount bolts, courtesy of [@Reth](https://www.youtube.com/@The_original_Reth). How tight some of these bolts are will affect the belt tension and input shaper graphs ![image](https://github.com/user-attachments/assets/8eeea914-5536-4123-9a23-faac687f491c)
 |                      | 97-103  |
 |                      | 104     | Do not install the cable chain mount, use M5x10 BHCS to attach both XY Joints to the gantry.
-|                      | 105-109 |
+|                      | 105-107 |
+
+> [!NOTE]
+> **Z AXIS**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
+| Voron 2.4R2          | 108     | 
 |                      | 110     | Use the part for normal microswitch endstops (`z_joint_upper`), not the Hall effect version.
 |                      | 111-113 |
 |                      | 114     | There are a couple of options to make hanging the gantry easier: [@Nero3D's trick](https://www.youtube.com/watch?v=YEl5FNvi8Bs&t=10489s), or [Voron Z-Locks](https://github.com/VoronDesign/VoronUsers/tree/main/printer_mods/tallman5/z-locks), or [@andimoto's "Voron v2.4 Gantry Installation Hooks"](https://www.printables.com/model/173635-voron-v24-gantry-installation-hook-new-version)
-|                      | 115-125 |
-|                      | 126-127 | Route the A and B belts at this point and leave them loose in front of the X rail.
+|                      | 115-123 |
+
+> [!NOTE]
+> **A/B BELTS**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
+| Voron 2.4R2          | 124-127 | Route the A and B belts at this point and leave them loose in front of the X rail.
 |                      | 128     |
-|                      | 129-131 | Skip these pages, TAP replaces the X carriage.
+|                      | 129-131 | Skip pages for standard X-carriage from 2.4R2 Assembly Manual and refer to VORON TAP [errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md) and [VORON TAP Assembly Manual instructions](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf).
+
+
+> [!NOTE]
+> **VORON TAP AND ERRATA**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
 | Voron TAP            | 1-17    | Read the [Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf) **AND** [Voron Tap r8 errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md). 
 | Voron TAP            | 18      | Use the Voron project's printed [MGN9 Assembly Tool](https://github.com/VoronDesign/Voron-Tap/blob/main/STLs/MGN9_Assembly_Tool.stl) rather than the similar part that comes with Formbot's kit.  Formbot's part is too fat and causes some inconvenience when reinstalling the carriage onto the rail later.
 | Voron TAP            | 19-23   |
@@ -161,12 +181,30 @@ Build sequence:
 | Voron TAP            | 29      | Per the errata we use M3x6, M3x12, and M3x16 SHCS to attach the rail.
 | Voron TAP            | 30      | The 2024-06-23 and 2024-11-23 kit uses a "Trident style" X-axis microswitch. The switch and pigtail is labeled "TO CAN-Endstop" and is attached using M2x10 self tapping screws included with the kit.
 | Voron TAP            | 31      | Attach the belts to the Center and attach the Center to the MGN12 linear rail of the X axis.  This video is helpful: <https://www.youtube.com/watch?v=mJNCn72lQpU>
+
+> [!NOTE]
+> **A/B BELTS**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
 | Voron 2.4R2          | 132-138 | Route the belts.
 | Voron 2.4R2          | 139-141 | Skip these, use the Tap instead.
 | Voron 2.4R2          | 142     | Check your work.
+
+> [!NOTE]
+> **VORON TAP AND ERRATA**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
 | Voron TAP            | 32      | If there is not sufficient clearance to install the MGN9H carriage onto its rail from the top, temporarily remove the lowest rail screw (the carriage stop, with the heat-set insert spacer) and install the carriage from the bottom, then reinstall the carriage stop screw. ![](/images/tap-carriage-install-0.jpg) ![](/images/tap-carriage-install-1.jpg)
 | Voron TAP            | 33      | I had to avoid tucking the belts through the slots in the Front part, it interfered with the motion of the Tap.
 | Voron TAP            | 34      |
+
+> [!NOTE]
+> **STEALTHBURNER**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
 | Stealthburner        | 1-10    |
 | Stealthburner        | 11      | If you have a CAN kit using EBB SB2209/SB0000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Main_Body_EBB.stl>
 | Stealthburner        | 12      |
