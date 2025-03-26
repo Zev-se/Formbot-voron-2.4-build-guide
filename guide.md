@@ -72,9 +72,12 @@ Noteworthy details:
 
 ### Mods included with kit
 * **Tap R8** w/ OptoTap rev 2.4.1 PCB and Omron sensor.
-* **Umbilical**
+* **Umbilical CAN bus**
 * **Clockwork2**
-* **Nevermore** v6
+* **[hartk1213's](https://github.com/hartk1213) mods** :
+  * PG7 Umbilical gland. Looks like [this remixed one](https://www.printables.com/model/312008-voron-24-a-drive-pg7-umbilical-mount), [Formbot printed parts STL is here](https://github.com/FORMBOT/Voron-2.4/blob/main/STL/Accent/PG7-Umbilical%20Motor%20Mount.stl).
+  * [Y-endstop relocation to the top A-motor mount](https://mods.vorondesign.com/details/Q1xuJ7ae98MoMeAumXdAw).
+* **Nevermore** v6 - The printed parts are considered an accessory and are NOT included if you order functional parts only.
 * **Air Filter** w/ injection molded part.  
 </details>
 
@@ -110,25 +113,64 @@ Build sequence:
 |                      | 40-53   |
 |                      | 54      | **Tool Tip**: _A thick rubber squeegee blade such as the type for window tint film and vinyl wrap is useful for reducing bubbles under the magnet and bed heater._ After carefully installing the flexplate magnet onto the aluminum bed plate, you need to cut away part of the magnet to expose the four bed plate mounting holes.  Note that you do *not* need to cut away the magnet over the two threaded holes near the rear edge of the plate, because these will be accessed from below, not from above.  Locate the bed plate mounting holes by drilling through the magnet from below, using the four existing holes as guides, then cut the magnet using a sharp knife.  ![](/images/flexplate-magnet-holes.jpg)
 |                      | 55-57   |
-|                      | 58      | The Formbot kit includes "Bakelite Isolation Columns" instead of M4 thumbnuts as spacers.  ![](/images/bakelite-isolation-columns.png)
-|                      | 59-63   | You don't have to install the bed at this point in the guide, it keeps the weight down if you install it when doing the electronics. If you plan on using the Nevermore filter I highly recommend you to build and install that before you install the bed, otherwise you'll have to take the bed back out (and that is a pain when everything is hooked up and the panels are already on). 
-|                      |         | Shift the bed forward by 0.5-1cm if you plan on using a nozzle wiper so the nozzle can reach behind the bed. The TAP plate will also move the nozzle a a few mm forward.
-| Nevermore            |         | [This](https://www.youtube.com/watch?v=or2v4V1QAaw) is a good guide to building the Nevermore V5, as its github is a bit lacking. My kit came with 2 wago connectors to connect the fans to the wiring, but I opted to crimp one of the JST male connectors on the wiring (you have those in the kit with the SB2209 but as the kit already comes with precrimped wires those are spares). I also used a bit of extrusion plastic cover (included in the kit) to tuck the wiring into the side of the extrusion where the bed rests on, that way the cable can never touch the hot bed. The printed parts on the [Formbot github](https://github.com/FORMBOT/Voron-2.4/tree/main/STL/Primary/Nevermore) are slightly different from the ones on the official [Nevermore github page](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V5_Duo/V2). Securing the magnets was more of a pain with the formbot version and still required superglue to keep them seated. There is a [V6](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V6) that might be worth looking into if you have to print the parts anyway.
-|                      | 64      | I'm using the default Voron Design `a_drive_frame_upper` part, not Formbot's version.  I'm then using @decidophobia's "Voron V2.4 PG7 Umbilical & Y Endstop Relocation with cable cutout - REMIX" part from printables to mount the Y endstop and anchor the PG7 gland.  <https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with->
-|                      | 65-83   |
+| Voron 2.4R2          | 58      | The Formbot kit includes "Bakelite Isolation Columns" instead of M4 thumbnuts as spacers.  ![](/images/bakelite-isolation-columns.png)  
+| Voron 2.4R2          | 59-63   | You don't have to install the bed at this point in the guide, it keeps the weight down if you install it when doing the electronics. If you plan on using the Nevermore filter I highly recommend you to build and install that before you install the bed, otherwise you'll have to take the bed back out (and that is a pain when everything is hooked up and the panels are already on). 
+|                      |         | Shift the bed forward by 0.5-1cm if you plan on using a nozzle wiper so the nozzle can reach behind the bed. The TAP plate will also move the nozzle a a few mm forward.  
+
+> [!TIP]
+> **Installing the Nevermore at this stage will save you re-work time.**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
+| Nevermore            |         | [This](https://www.youtube.com/watch?v=or2v4V1QAaw) is a good guide to building the Nevermore V5, as its github is a bit lacking. My kit came with 2 wago connectors to connect the fans to the wiring, but I opted to crimp one of the JST male connectors on the wiring (you have those in the kit with the SB2209 but as the kit already comes with precrimped wires those are spares). I also used a bit of extrusion plastic cover (included in the kit) to tuck the wiring into the side of the extrusion where the bed rests on, that way the cable can never touch the hot bed. The printed parts on the [Formbot github](https://github.com/FORMBOT/Voron-2.4/tree/main/STL/Primary/Nevermore) are slightly different from the ones on the official [Nevermore github page](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V5_Duo/V2). Securing the magnets was more of a pain with the formbot version and still required superglue to keep them seated. There is a [V6](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V6) that might be worth looking into if you have to print the parts anyway.  
+
+> [!NOTE]
+> **A/B Drives and Idlers**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
+| Voron 2.4R2          | 64      | The Formbot printed parts use [hartk1213's Y-stop relocation to A-drive mount](https://mods.vorondesign.com/details/Q1xuJ7ae98MoMeAumXdAw) model. The long Y-endstop cable should be routed through the cable path at this step to avoid tedious re-work. The endstop is screwed in with a single M2x10 Self-Tapping screw. This cable will route through the drag chain later so bundle the wires for now. <br> <br> Optionally, you can use the standard VORON Design `a_drive_frame_upper` part here instead if want to use something like @decidophobia's [Voron V2.4 PG7 Umbilical & Y Endstop Relocation with cable cutout](https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with-) part to mount the Y-endstop and anchor the PG7 gland.
+|                      | 65-80   |
+
+> [!NOTE]
+> **Gantry**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
+| Voron 2.4R2          | 80      | 
 |                      | 84      | Do not install heat-set threaded inserts into the cable chain mount, the Formbot kit uses an umbilical instead of cable chains.
 |                      | 85-95   |
 |                      | 96      | Keep the following in mind when installing the XY mount bolts, courtesy of [@Reth](https://www.youtube.com/@The_original_Reth). How tight some of these bolts are will affect the belt tension and input shaper graphs ![image](https://github.com/user-attachments/assets/8eeea914-5536-4123-9a23-faac687f491c)
 |                      | 97-103  |
 |                      | 104     | Do not install the cable chain mount, use M5x10 BHCS to attach both XY Joints to the gantry.
-|                      | 105-109 |
+|                      | 105-107 |
+
+> [!NOTE]
+> **Z AXIS**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
+| Voron 2.4R2          | 108     | 
 |                      | 110     | Use the part for normal microswitch endstops (`z_joint_upper`), not the Hall effect version.
 |                      | 111-113 |
 |                      | 114     | There are a couple of options to make hanging the gantry easier: [@Nero3D's trick](https://www.youtube.com/watch?v=YEl5FNvi8Bs&t=10489s), or [Voron Z-Locks](https://github.com/VoronDesign/VoronUsers/tree/main/printer_mods/tallman5/z-locks), or [@andimoto's "Voron v2.4 Gantry Installation Hooks"](https://www.printables.com/model/173635-voron-v24-gantry-installation-hook-new-version)
-|                      | 115-125 |
-|                      | 126-127 | Route the A and B belts at this point and leave them loose in front of the X rail.
+|                      | 115-123 |
+
+> [!NOTE]
+> **A/B BELTS**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
+| Voron 2.4R2          | 124-127 | Route the A and B belts at this point and leave them loose in front of the X rail.
 |                      | 128     |
-|                      | 129-131 | Skip these pages, TAP replaces the X carriage.
+|                      | 129-131 | Skip pages for standard X-carriage from 2.4R2 Assembly Manual and refer to VORON TAP [errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md) and [VORON TAP Assembly Manual instructions](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf).
+
+
+> [!NOTE]
+> **VORON TAP AND ERRATA**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
 | Voron TAP            | 1-17    | Read the [Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf) **AND** [Voron Tap r8 errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md). 
 | Voron TAP            | 18      | Use the Voron project's printed [MGN9 Assembly Tool](https://github.com/VoronDesign/Voron-Tap/blob/main/STLs/MGN9_Assembly_Tool.stl) rather than the similar part that comes with Formbot's kit.  Formbot's part is too fat and causes some inconvenience when reinstalling the carriage onto the rail later.
 | Voron TAP            | 19-23   |
@@ -139,12 +181,30 @@ Build sequence:
 | Voron TAP            | 29      | Per the errata we use M3x6, M3x12, and M3x16 SHCS to attach the rail.
 | Voron TAP            | 30      | The 2024-06-23 and 2024-11-23 kit uses a "Trident style" X-axis microswitch. The switch and pigtail is labeled "TO CAN-Endstop" and is attached using M2x10 self tapping screws included with the kit.
 | Voron TAP            | 31      | Attach the belts to the Center and attach the Center to the MGN12 linear rail of the X axis.  This video is helpful: <https://www.youtube.com/watch?v=mJNCn72lQpU>
+
+> [!NOTE]
+> **A/B BELTS**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
 | Voron 2.4R2          | 132-138 | Route the belts.
 | Voron 2.4R2          | 139-141 | Skip these, use the Tap instead.
 | Voron 2.4R2          | 142     | Check your work.
+
+> [!NOTE]
+> **VORON TAP AND ERRATA**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
 | Voron TAP            | 32      | If there is not sufficient clearance to install the MGN9H carriage onto its rail from the top, temporarily remove the lowest rail screw (the carriage stop, with the heat-set insert spacer) and install the carriage from the bottom, then reinstall the carriage stop screw. ![](/images/tap-carriage-install-0.jpg) ![](/images/tap-carriage-install-1.jpg)
 | Voron TAP            | 33      | I had to avoid tucking the belts through the slots in the Front part, it interfered with the motion of the Tap.
 | Voron TAP            | 34      |
+
+> [!NOTE]
+> **STEALTHBURNER**
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---  
 | Stealthburner        | 1-10    |
 | Stealthburner        | 11      | If you have a CAN kit using EBB SB2209/SB0000, use the Bigtreetech part: <https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Main_Body_EBB.stl>
 | Stealthburner        | 12      |
@@ -168,9 +228,13 @@ Build sequence:
 | Stealthburner        | 55      | Discard the half of the fan housing that doesn't have the fan motor and rotor mounted on it.
 | Stealthburner        | 56      | Don't screw in the screws yet, they'll come as part of the SB2209.
 |                      |         |
-|                      |         | **WARNING: DO NOT UNDER ANY CIRCUMSTANCES PLUG BOARDS OR JUMPERS OR CABLES IN WHILE THEY ARE POWERED ON. DOING SO RESULTS IN: blown up toolhead boards, blown up fan regulators, etc.**  Always shut down, power down fully and then do the change. 
-|                      |         |
-| EBB SB2209           | N/A     | To work around [this problem](https://github.com/bigtreetech/EBB/issues/88), solder a 10 kOhm resistor between GPIO21 and +5V on the Probe connector. ![](/images/SB2209-RP2040-pullup.jpg)
+
+> [!WARNING]
+> **WARNING: DO NOT UNDER ANY CIRCUMSTANCES PLUG BOARDS OR JUMPERS OR CABLES IN WHILE THEY ARE POWERED ON. DOING SO RESULTS IN: blown up toolhead boards, blown up fan regulators, etc.**  Always shut down, power down fully and then do the change.
+
+| Manual               | Pages   | Comment
+|----------------------|---------|---
+| EBB SB2209           | N/A     | :memo: <a href="pull-up-gpio22-on-probe"></a> The US November 2024 kit did not require this step. <br> Place the smallest jumpers on **both** main M8P v2.0 board ([ref:between boot0 button and CAN port](/images/M8P_v2.0_120R-jumper.png)), and EBB-SB2209(RP2040) CAN-120R([ref](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/Hardware/EBB%20SB2209%20CAN%20V1.0%EF%BC%88RP2040%EF%BC%89-Pin.png)). <br> When you configure Klipper, [enable the hardware pull-up](https://www.klipper3d.org/Config_Reference.html#micro-controller-configuration) on `EBBmcu:gpio22` in the `[probe]` section. ** <br><br> :zap: To work around [this problem](https://github.com/bigtreetech/EBB/issues/88), solder a 10 kOhm resistor between GPIO21 and +5V on the Probe connector. ![](/images/SB2209-RP2040-pullup.jpg)
 | EBB SB2209           | 2       | Install the SB0000 on top of the fan, then screw in the screws.
 | EBB SB2209           | 3-4     | Set the SB2209 jumper for the voltage shown on your fans, mine were all 24V. Make sure you use the correct sized jumpers, there are several in the kit and they need to fit snugly to make a solid connection.
 | EBB SB2209           | 5       | Skip this page if your fans have 2-wire connections (non-PWM fans).
@@ -190,7 +254,7 @@ Build sequence:
 | EBB SB2209           | 18      | Skip this page, the kit does not use BLTouch or Klicky probe.
 | EBB SB2209           | 19      | Final assembly of Stealthburner! Make sure the pins of the SB0000 are aligned with the header on the SB2209 properly, misalignment will put 24V on 5V pins and is a common source for blown up boards! [This printable piece](https://www.printables.com/model/642001-voron-stealthburner-sb2209-sb2040-misalignment-pro) is optional protection to protect against misalignment.
 | EBB SB2209           | 20-24   | The proposed method does not provide enough strain relief for the CAN cable, there are several reports in the Voron discord that the CAN cable wiring or the connector on the board fails after a certain amount of hours. Using a different cable bridge with a proper PUG based strain relief not only prevents that but makes it more rigid, improving input shaper results. [This](https://www.printables.com/model/825825-sb2209-sb2240-mount-for-pug-new-plug) is the cable bridge with a [PUG](https://www.printables.com/model/378567-pug-parametric-umbilical-gland), for the CAN cable PUG_v4_M_5.0mm works well.
-| EBB SB2209           |         | The guide also does not explain how to route the CAN cable. There are several options: 1) there is a PG7 Cable gland in the kit and [printed part](https://github.com/FORMBOT/Voron-2.4/blob/main/STL/Accent/PG7-Umbilical%20Motor%20Mount.stl) to wire the CAN cable (with piano wire) to the A drive and then through the Z-chain. Unscrew the PG7 connector, route the CAN wire through (you might need to remove the rubber insert first to get the 2 pin connector through), then screw in the bottom into the printed part and screw the top into the bottom part, this acts as cable relief so the cable should have been captured snugly. Make sure you move the gantry around so the CAN cable is long enough to allow full range of movement. 2) Alternatively, the CAN cable can also be routed through the exhaust and along the backside of the printer instead of through the Z drag chain, this is a better option as the CAN cable can introduce swaying and pulling on the toolhead on fast back and forth moves (and this way is often recommended in the #voron_resonance channel on the Voron discord). You'll need to print [this](https://www.printables.com/model/358607-voron-v2-exhaust-fan-grill-with-bowdenpg7thermisto) or any other variant that has a PG7 hole, in combination with [this](https://www.printables.com/model/978123-voron-bowden-ptfe-tube-guide-arm-and-canbus-cable) guide arm which will provide support for the CAN cable (and thus not press on the toolhead as much). This is not required to have a functioning printer but something to keep in mind for tidying up later.
+| EBB SB2209           |         | The guide also does not explain how to route the CAN cable. There are several options: <br> 1) there is a PG7 Cable gland in the kit and [printed part](https://github.com/FORMBOT/Voron-2.4/blob/main/STL/Accent/PG7-Umbilical%20Motor%20Mount.stl) to wire the CAN cable (with piano wire) to the A drive and then through the Z-chain. Unscrew the PG7 connector, route the CAN wire through (you might need to remove the rubber insert first to get the 2 pin connector through), then screw in the bottom into the printed part and screw the top into the bottom part, this acts as cable relief so the cable should have been captured snugly. Make sure you move the gantry around so the CAN cable is long enough to allow full range of movement. <br> 2) Alternatively, the CAN cable can also be routed through the exhaust and along the backside of the printer instead of through the Z drag chain, this is a better option as the CAN cable can introduce swaying and pulling on the toolhead on fast back and forth moves (and this way is often recommended in the #voron_resonance channel on the Voron discord). You'll need to print [this](https://www.printables.com/model/358607-voron-v2-exhaust-fan-grill-with-bowdenpg7thermisto) or any other variant that has a PG7 hole, in combination with [this](https://www.printables.com/model/978123-voron-bowden-ptfe-tube-guide-arm-and-canbus-cable) guide arm which will provide support for the CAN cable (and thus not press on the toolhead as much). This is not required to have a functioning printer but something to keep in mind for tidying up later.
 | EBB M8P              | 16 (V1) or 12 (V2) | In order to flash the toolhead you need the CB1. Install the CB1 board onto the M8P. Make sure the board is seated correctly on both sides, there should be an audible click as the connectors snap in place.
 | EBB M8P              | 24-35 (V1) or 20-31 (V2) | Follow the instructions to flash an SD card with a compatible image. The M8P board has 2 SD card slots, one for the M8P firmware, another for the SoC. Make sure you put the SD card in the SoC SD card slot. You can power the M8P and CB1 from USB if you set the USB 5V jumper (make sure to remove this jumper once you switch to 24V power). Once you have an ssh connection you can continue
 | EBB SB2209           | 25-29   | Flash the toolhead board.  I had to unplug USB, press and hold BOOT, and reconnect USB in order to get it into bootloader mode, clicking the RST button did not work.
@@ -204,7 +268,7 @@ Build sequence:
 | Voron 2.4R2          | 156     | Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V
 | Voron 2.4R2          | 157     |
 | Voron 2.4R2          | 158-161 | Skip these pages, the kit uses Tap instead of a Z endstop.
-| Voron 2.4R2          | 162-164 | Different versions of this kit handle the X & Y endstops (limit switches) in different ways.  <ul> <li>Newer versions of the kit that use the SB2209 toolhead board place the X endstop on the toolhead (we did this up above) and place the Y endstop on the right-rear coreXY motor (e.g. using this part: <https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with->).</li> <li>Older versions of the kit that don't use the SB2209 mount the limit switches on a custom PCB, but otherwise follow the mainline Voron instructions.  This means placing both endstops on the right-hand side of the gantry: ![](/images/voron_limit_switch.png)</li> </ul>
+| Voron 2.4R2          | 162-164 | Different versions of this kit handle the X & Y endstops (limit switches) in different ways. <br> <ul>The US kit from November 2024 with printed parts from China came with [this PG7 umbilical mount](https://github.com/FORMBOT/Voron-2.4/blob/main/STL/Accent/PG7-Umbilical%20Motor%20Mount.stl), which is originally from this [remixed model](https://www.printables.com/model/312008-voron-24-a-drive-pg7-umbilical-mount) originally by [hartk1213](https://github.com/hartk1213), however the link to the original file path is not found.</li> <li> The FormBot printed parts from China used [hartk1213's](https://github.com/hartk1213) [Y-stop relocation to the Top A-drive mount](https://mods.vorondesign.com/details/Q1xuJ7ae98MoMeAumXdAw) part. The long Y-endstop cable should be routed through the hole before you assemble the drag chain. The endstop is screwed in with a single M2x10 Self-Tapping screw. See installed images for reference: [routing wires](/images/Y-endstop-routing-wire.jpg), [installed](/images/Y-endstop-installed.jpg). </li> <li>Newer versions of the kit that use the SB2209 toolhead board place the X endstop on the toolhead (we did this up above) and place the Y endstop on the right-rear coreXY motor (e.g. using this part: <https://www.printables.com/model/527499-voron-v24-pg7-umbilical-y-endstop-relocation-with->).</li> <li>Older versions of the kit that don't use the SB2209 mount the limit switches on a custom PCB, but otherwise follow the mainline Voron instructions.  This means placing both endstops on the right-hand side of the gantry: ![](/images/voron_limit_switch.png)</li> </ul>
 | Voron 2.4R2          | 165-167 |
 | Voron 2.4R2          | 168     | Note: For the rest of the assembly process, refer to the Voron 2.4r2 manual and the Formbot wiring guide for placement of the electronics. Also, if you're unsure as to what is what, please look at the image in the notes from the build below.
 | Voron 2.4R2          | 169     | Install the 24V power supply and its mounts on the DIN rail.  For 300mm, mount as shown in the Formbot Wiring Guide.  For 250mm, mount as shown in the Voron 2.4r2 manual. Make sure you add the extra mounting bracket.
@@ -238,7 +302,7 @@ Build sequence:
 | Software config      |         | Follow the Esoterical CAN Guide final steps to configure both [mcu] with canbus uuids so Klipper will recognize them. Note that when Klipper ingests the MCU they won't be visible through the can_query command to list them anymore.
 | Software config      |         | Configure the SB2209 Toolhead, starting from the sample cfg provided [here](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/sample-bigtreetech-ebb-sb-rp2040-canbus-v1.0.cfg). Make use of the pinout diagram to verify that the GPIO's used are correct with how you plugged things in. If you have a PT1000 temperature sensor plugged in into the 4 pin 31865 socket, remove the sensor_pin and sensor_type in extruder and uncomment the sensor_type: MAX31865 block. The temperature is accessed through communication with the MAX31865 chip
 | Software config      |         | Configure the M8P mainboard, start from the provided sample cfg on the Voron repo [here](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/M8P). Remove unnecessary things, verify the pins with the pinout diagram, the heater bed sensor type you can find on the back of the heater, mine was Generic 3950. Don't forget to set the X-endstop to the toolhead GPIO pin (when referencing a GPIO pin from a different MCU, you need to prefix it with its name so it becomes `pin: EBBCAN:gpio6`). Don't forget to copy over the extruder settings to the toolhead config, the sample SB2209 config is not set up for Clockwork 2.
-| Software config      |         | Configure TAP, follow the post-install instructions on the [github page](https://github.com/VoronDesign/Voron-Tap). You will need to pull up the pin with `^`, with the provided wiring TAP is connected to gpio22 so it becomes `pin: ^EBBCan:gpio22` (verify with your pinout if it's the same for you). Skip PROBE_CALIBRATE for now, do that after homing and quad gantry levelling when the Initial Startup section on the Voron website calls for it.
+| Software config      |         | Configure TAP, follow the post-install instructions on the [github page](https://github.com/VoronDesign/Voron-Tap). You will need to pull up the pin with `^`, with the provided wiring TAP is connected to gpio22 so it becomes `pin: ^EBBCan:gpio22` (verify with your pinout if it's the same for you). Skip PROBE_CALIBRATE for now, do that after homing and quad gantry levelling when the Initial Startup section on the Voron website calls for it. <br> [See note above on CAN 120R jumpers](#pull-up-gpio22-on-probe).
 | Software config      |         | For the stealthburner LEDs to work you'll need to add [this](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg) config file to Klipper.
 |                      |         | Continue on the Voron website with the Initial startup, Slicer Setup, and First Print sections. First print wooo!
 | Voron 2.4R2          | 210     |
