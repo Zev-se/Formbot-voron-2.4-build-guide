@@ -173,14 +173,14 @@ Build sequence:
 |----------------------|---------|---  
 | Voron TAP            | 1-17    | Read the [Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf) **AND** [Voron Tap r8 errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md). 
 | Voron TAP            | 18      | Use the Voron project's printed [MGN9 Assembly Tool](https://github.com/VoronDesign/Voron-Tap/blob/main/STLs/MGN9_Assembly_Tool.stl) rather than the similar part that comes with Formbot's kit.  Formbot's part is too fat and causes some inconvenience when reinstalling the carriage onto the rail later.
-| Voron TAP            | 19-23   |
-| Voron TAP            | 24      | Per the errata (_you did read the [errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md), right??_) the threaded inserts are installed slightly differently.
-| Voron TAP            | 25-26   |
-| Voron TAP            | 27      | Per the errata, the two M3x6 FHCS that thread in to the Tap\_Front part at an angle may be replaced with magnets, e.g. if your screws are non-magnetic. ![](/images/Tap_Front.png) ![](/images/tap-magnet-option.png)
-| Voron TAP            | 28      |
-| Voron TAP            | 29      | Per the errata we use M3x6, M3x12, and M3x16 SHCS to attach the rail.
+| Voron TAP            | 19-21   |
+| Voron TAP            | 22-24   | Per the errata (_you did read the [errata](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/R8_errata.md), right??_) the threaded inserts are installed slightly differently.
+| Voron TAP            | 25      |
+| Voron TAP            | 26      | This kit uses the "Optical PCB" option.
+| Voron TAP            | 27      | Per the errata, the two M3x6 FHCS that thread in to the `Tap_Front` part at an angle may be replaced with magnets, e.g. if your screws are non-magnetic. I use FHCS and it's working fine, but you do you. ![](/images/Tap_Front.png) ![](/images/tap-magnet-option.png)
+| Voron TAP            | 28      | M3x10 BHCS may be a bit on the short side, substitute M3x12 BHCS if necessary.
+| Voron TAP            | 29      | Per the errata we use M3x6, M3x12, and M3x16 SHCS to attach the rail (with a threaded insert as a spacer on the M3x16).  I had trouble with the rail coming loose, so i added a drop of blue Loctite on each of these screws and snugged them down tightly, and that fixed it.  As with all rails, tighten from the center out.
 | Voron TAP            | 30      | The 2024-06-23 and 2024-11-23 kit uses a "Trident style" X-axis microswitch. The switch and pigtail is labeled "TO CAN-Endstop" and is attached using M2x10 self tapping screws included with the kit.
-| Voron TAP            | 31      | Attach the belts to the Center and attach the Center to the MGN12 linear rail of the X axis.  This video is helpful: <https://www.youtube.com/watch?v=mJNCn72lQpU>
 
 > [!NOTE]
 > **A/B BELTS**
@@ -196,6 +196,7 @@ Build sequence:
 
 | Manual               | Pages   | Comment
 |----------------------|---------|---  
+| Voron TAP            | 31      | Install 2x M3 nuts to the back side of the Center to hold the belt covers (see Errata).  Run the belts through the slots in the center and out the front.  Attach the Center to the MGN12 linear rail of the X axis, pulling the belts snug as you do so.  Attach the printed belt covers from the Errata using M3x8 BHCS into the M3 nuts installed earlier.  This video is helpful: <https://www.youtube.com/watch?v=mJNCn72lQpU>
 | Voron TAP            | 32      | If there is not sufficient clearance to install the MGN9H carriage onto its rail from the top, temporarily remove the lowest rail screw (the carriage stop, with the heat-set insert spacer) and install the carriage from the bottom, then reinstall the carriage stop screw. ![](/images/tap-carriage-install-0.jpg) ![](/images/tap-carriage-install-1.jpg)
 | Voron TAP            | 33      | I had to avoid tucking the belts through the slots in the Front part, it interfered with the motion of the Tap.
 | Voron TAP            | 34      |
