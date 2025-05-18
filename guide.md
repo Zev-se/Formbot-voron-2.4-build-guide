@@ -244,6 +244,7 @@ Build sequence:
 | EBB SB2209           | 11      |
 | Stealthburner        | 57-58   |
 | Stealthburner        | 59-65   | Skip, not used with Tap.
+| Voron TAP            | 34      | Mount CW2 to Tap
 | Stealthburner        | 66      | The Printhead assembly mates flush against the Tap assembly, and is initially held by the two M3x16 SHCS screws from Tap page 25 and resting on the two M3x6 BHCS from Tap page 27.
 | Stealthburner        | 67      | Don't do this page, we did it as part of the EBB manual.
 | Stealthburner        | 68-69   | Don't do these pages, there's an ADXL345 on the SB2209 (RP2040).
